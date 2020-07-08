@@ -1,0 +1,39 @@
+
+.about {
+    padding: 0 120px;
+}
+
+.about__header {
+    
+}
+
+.about__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: -39px;
+}
+
+.about__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid #979797;
+    background-color: #d8d8d8;
+    min-width: 260px;
+    height: 82px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    margin-right: 39px;
+    flex: 0;
+
+    &:last-child {
+        flex: 1;
+    }
+}
+
+.about__text {
+    font-size: 24px;
+}

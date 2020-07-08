@@ -1,0 +1,30 @@
+
+$themecolor:#104591; //цвет темы
+$themecolor2:#e73a47; //цвет темы
+
+
+$button_buy:#e73a47; //Кнопка купить
+$yellow:#f7e126; //Кнопка стандарт
+$button_hover:rgba(19, 21, 47, 1); //Кнопка ховер
+
+
+$active-price: #b2bcd4; //декорация позунка
+
+$tableprice:rgba(115, 202, 243, 1); //цвет рамки билетов
+$tableprice_bg:rgba(115, 202, 243, 0); // цвет прозрачности рамки
+$tableprice_bg-hover:#fcf5f9; //цвет фона рамки при наведении
+
+
+.section-title {    
+    text-align: center;
+    margin-bottom: 64px;
+    text-transform: uppercase;
+}
+
+.section--red {
+    background-color: $themecolor2;
+}
+
+.section--bg--blue a {
+    color: white;
+}
