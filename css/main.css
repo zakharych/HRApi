@@ -390,6 +390,7 @@ body {
 .section--base {
   padding-top: 55px;
   padding-bottom: 100px;
+  min-width: 1400px;
 }
 
 h1 {
@@ -788,11 +789,12 @@ button:hover {
 }
 
 .hero-section {
-  background: url(../img/bg.png) repeat, url(../img/hero.png) no-repeat;
-  background-size: cover;
+  background: url(../img/pattern__hero.png) repeat, url(../img/bg.png) repeat, url(../img/hero.png) no-repeat;
+  background-size: auto, auto , cover;
   color: white;
   background-color: #202123;
   margin-top: 68px;
+  padding: 0;
 }
 
 .hero {
