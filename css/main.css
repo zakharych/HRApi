@@ -782,6 +782,22 @@ button:hover {
   margin-right: 0;
 }
 
+.social__item-vk {
+  background-image: url(https://ostconf.com/i/blocks/social/vk.svg);
+}
+
+.social__item-fb {
+  background-image: url(https://ostconf.com/i/blocks/social/facebook.svg);
+}
+
+.social__item-yb {
+  background-image: url(https://ostconf.com/i/blocks/social/youtube.svg);
+}
+
+.social__item-tg {
+  background-image: url(https://ostconf.com/i/blocks/social/telegram.svg);
+}
+
 .socials-head__link {
   width: 100%;
   height: 100%;
