@@ -1,0 +1,49 @@
+.pk-section__title {
+    color: #ffffff;
+}
+.pc-section {   
+    background: url(../img/bg_pattern_03.png) repeat; 
+    background-color: $themecolor2;
+}
+.pk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 216px;
+}
+
+.pk__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 46px;
+}
+.pk__img {
+    height: 260px;
+    width: 260px;
+    border: 4px solid #ff0000;
+    border-radius: 50%;
+}
+.pk__avatar {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;    
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+.pk__company {
+
+color: #f7e126;
+}
