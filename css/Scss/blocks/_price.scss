@@ -1,0 +1,345 @@
+.price {
+    padding: 0 120px;
+}
+
+.price__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 140px;
+    
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.price__table-row {
+    border-top: solid 3px #114490;
+
+    &:last-child {
+        border-bottom: solid 3px #114490;
+    }
+}
+
+.price__table-col {
+    padding: 19px 0;
+    width: 20%;
+
+    &:first-child {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    &:nth-child(3) {
+        color: #e20714;
+    }
+}
+
+
+
+
+.price__section {
+    position: relative;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.list__item {
+    text-align: center;
+    position: relative;
+    flex: 1;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cost {
+    margin-bottom: 5px;
+}
+
+.cost__active {
+    background-color: $active-price;
+    color: white;
+    border-radius: 4px;
+    padding: 1px 3px;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+
+
+.dot {
+    display: inline-block;
+    width: 1.55em;
+    height: 1.55em;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    margin-left: 6px;
+    border: 0.5em solid #fff;
+}
+
+.dot__active {
+    width: 1.55em;
+    height: 1.55em;
+    background-color: $active-price;
+    border: 0.5em solid $active-price;
+    z-index: 10;
+    position: relative;
+}
+
+.dot__post-active {
+    background-color: $active-price;
+}
+
+.cost__post-active,
+.date__post-active {
+    color: #666;
+}
+
+
+
+.line {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    border: 0;
+    height: 0.188em;
+    border-radius: 0.063em;
+    background-color: #d9d9d9;
+    top: 2.4em;
+    /* top: 0.63em; */
+    left: calc(-50% + 0.4em);
+    right: calc(50% + 0.4em);
+}
+
+.line__active {
+    background-color: $active-price;
+}
+
+
+
+
+.tickets {
+    display: flex;
+}
+
+
+.wrapper-tickets {
+
+    font: 400 16px/1.42 'Open Sans', sans-serif;
+    display: flex;
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    margin-right: 40px;
+}
+
+.wrapper-tickets:last-child {
+    margin-right: 0px;
+}
+
+.content {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.left,
+.right {
+    flex: 1;
+    border: solid 0.1em transparent;
+    border-radius: 3px;
+    background-image: linear-gradient(white, white),
+        linear-gradient(to right, #cccccc00, #ccc);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.left {
+    background-image: linear-gradient(white, white),
+        linear-gradient(to right, $tableprice, $tableprice_bg);
+}
+
+.right {
+    background-image: linear-gradient(white, white),
+        linear-gradient(to right, $tableprice_bg, $tableprice);
+}
+
+
+
+.right:before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 14px);
+    right: -14px;
+    border: 0.1em solid $tableprice;
+}
+
+.right:after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 98px;
+    background: #fff;
+    position: absolute;
+    top: calc(50% - 44px);
+    right: -15px;
+}
+
+
+.left:before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 14px);
+    left: -14px;
+    border: 0.1em solid $tableprice;
+}
+
+.left:after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 98px;
+    background: #fff;
+    position: absolute;
+    top: calc(50% - 44px);
+    left: -15px;
+}
+
+.ticket__date {
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+}
+
+.tickets__price-condition {
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 13px;
+}
+
+.tickets__head {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tickets__price {
+    font-size: 48px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.tickets__promo {
+    color: #c7372a;
+    margin-bottom: 0;
+}
+
+.summ {
+    position: relative;
+}
+
+.summ--price::before {
+    content: "3000 ₽";
+    white-space: nowrap;
+    font-size: 22px;
+    position: absolute;
+    bottom: -14px;
+    left: calc(50% - 20px);
+    color: #ccc;
+    font-family: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont,
+        'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    display: inline-block;
+}
+
+.summ--price::after {
+    background-color: rgb(102, 102, 102);
+    content: " ";
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - 25px);
+    transform: rotate(-10deg);
+}
+
+
+.ticket__title {
+    font-size: 32px;
+}
+
+.ticket__button {
+    align-self: center;
+    font-size: 16px;
+}
+
+.right--after {
+    flex: 1;
+}
+
+.ticket__list {
+    margin-bottom: 15px;
+}
+
+.check {
+    color: #c9b2a2;
+}
+
+.condition__item {
+    display: flex;
+    align-items: center;
+}
+
+.none {
+    color: #e03626;
+}
+
+.wrapper-tickets:hover .content {
+    background-color: $tableprice_bg-hover;
+}
+
+.wrapper-tickets:hover .left {
+    background-image: linear-gradient($tableprice_bg-hover, $tableprice_bg-hover),
+        linear-gradient(to right, $tableprice, $tableprice_bg-hover);
+}
+
+.wrapper-tickets:hover .right {
+    background-image: linear-gradient($tableprice_bg-hover, $tableprice_bg-hover),
+        linear-gradient(to right, $tableprice_bg-hover, $tableprice);
+}
+
+.wrapper-tickets:hover .button__buy {
+    background-color: rgba(19, 21, 47, 1);
+}
+
+
+.tickets__link {
+    color: #333;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    z-index: 1;
+}
