@@ -1,7 +1,9 @@
 .price {
     padding: 0 120px;
 }
-
+.price-section__title {
+    color: #000000;
+}
 .price__table {
     width: 100%;
     border-collapse: collapse;
@@ -49,7 +51,7 @@
     flex-wrap: wrap;
 }
 
-.wrapper-tickets {
+.ticket {
 
     font: 400 16px/1.42 'Open Sans', sans-serif;
     display: flex;
@@ -64,6 +66,10 @@
 
     &:last-child {
         margin-right: 0px;
+    }
+
+    &--less-height {
+        align-self: flex-start;
     }
 }
 
@@ -153,11 +159,6 @@
     left: -15px;
 }
 
-.ticket__date {
-    color: rgb(153, 153, 153);
-    font-size: 12px;
-}
-
 
 
 
@@ -239,40 +240,132 @@
 }
 
 
-.material-icons {
+.material-icons--green {
     font-weight: bold;
     font-size: 30px;
     color: #3aa935;
     align-self: flex-start;
     margin-right: 5px;
     line-height: 1;
-    // display: none;
 }
 
-.wrapper-tickets:hover .content {
+
+//  Рамка блока с билетами
+.ticket:hover .content {
     background-color: $tableprice_bg-hover;
 }
 
-.wrapper-tickets:hover .left {
+.ticket:hover .left {
     background-image: linear-gradient($tableprice_bg-hover, $tableprice_bg-hover),
         linear-gradient(to right, $tableprice, $tableprice_bg-hover);
 }
 
-.wrapper-tickets:hover .right {
+.ticket:hover .right {
     background-image: linear-gradient($tableprice_bg-hover, $tableprice_bg-hover),
         linear-gradient(to right, $tableprice_bg-hover, $tableprice);
 }
 
-.wrapper-tickets:hover .button__buy {
+.ticket:hover .button__buy {
     background-color: rgba(19, 21, 47, 1);
 }
 
 
-.tickets__link {
-    color: #333;
-    width: 100%;
-    height: 100%;
+
+
+// слайднер даты
+.date-slider {
+    padding: 0 70px;
+}
+
+.list {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+}
+
+.list__item {
+    text-align: center;
+    position: relative;
+    width: 18%;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cost {
+    margin-bottom: 5px;
+}
+
+.cost__active {
+    background-color: $active-price;
+    color: white;
+    border-radius: 4px;
+    padding: 1px 3px;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+
+.date__post {
+    margin-bottom: 18px;
+    
+font-size: 21px;
+font-weight: 400;
+
+    &--active {
+
+        font-size: 21px;
+        font-weight: 700;
+    }
+}
+
+.cost__post-active,
+.date__post-active {
+    color: #666;
+
+}
+
+.dot {
+    display: inline-block;
+    width: 1.55em;
+    height: 1.55em;
+    border-radius: 50%;
+    background-color: #5f5f60;
+    margin-left: 7px;
+    border: 0.5em solid #fff;
+}
+
+.dot__active {
+    width: 1.8em;
+    height: 1.8em;
+    background-color: yellow;
+    border: 0.6em solid #e20714;
+    z-index: 10;
+    position: relative;
+    margin-top: -2px;
+}
+
+.dot__post-active {
+    background-color: #e20714;
+}
+
+
+.line {
+    display: inline-block;
     position: absolute;
-    display: block;
-    z-index: 1;
+    width: 100%;
+    border: 0;
+    height: 0.188em;
+    border-radius: 0.063em;
+    background-color: #5f5f60;
+    top: 3.65em;
+    /* top: 0.63em; */
+    left: calc(-50% + 0.4em);
+    right: calc(50% + 0.4em);
+}
+
+.line__active {
+    background-color: #e20714;
 }
