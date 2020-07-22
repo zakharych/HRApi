@@ -279,19 +279,20 @@
 
 // слайднер даты
 .date-slider {
-    padding: 0 70px;
+    // padding: 0 70px;
 }
 
 .list {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 50px;
+    margin-bottom: 50px;    
+    margin-right: -56px;
 }
 
 .list__item {
     text-align: center;
     position: relative;
-    width: 18%;
+    width: 19%;
 }
 
 .test {

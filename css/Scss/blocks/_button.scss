@@ -1,16 +1,19 @@
 
 .button {
-    padding: 8px 19px;    
+    // padding: 8px 19px;    
+    padding: 8px 8px;    
     border: 2px solid #000000;
     background-color: $yellow;
     color: #000000;
     font: normal 14px/1.42 'Open Sans', sans-serif;
     cursor: pointer;    
     transition: 0.4s;
+    white-space: nowrap;
 }
 
 button:hover {
      background-color: $button_hover;
+     color: #ffffff;
 }
 
 .button__buy {

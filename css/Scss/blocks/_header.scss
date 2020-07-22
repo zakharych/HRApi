@@ -16,7 +16,12 @@
 }
 .header__menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include tablets {
+
+        justify-content: center;
+     }
 }
 
 .header-row {
@@ -74,18 +79,37 @@
 
 .buttons__list {
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -10px;
+    justify-content: center;
+    .button {        
+        margin-bottom: 10px;
+    }
+
+    @include tablets {
+
+        .button {
+            min-width: 142px;
+            margin-bottom: 10px;
+        }
+    }
 }
 
 .buttons__item {
     margin-right: 10px;
 }
 
-.buttons__item:last-child {
-    margin-right: 0px;
-}
+// .buttons__item:last-child {
+//     margin-right: 0px;
+// }
 
 .header-col {
     display: flex;
+    margin-right: 5px;
+
+    &:first-child {
+        margin-right: 0px;
+    }
 }
 
 .lang__button{
@@ -100,6 +124,12 @@
     width: 100%;
     justify-content: flex-end;
     align-items: center;
+    flex: 1;
+
+    @include tablets {
+
+       display: none;
+    }
 }
 
 .socials-head__list {
@@ -110,7 +140,7 @@
 }
 
 .socials-head__item {
-    margin-right: 11px;
+    margin-right: 5px;
     width: 30px;
     height: 30px;
     background-image: url(https://ostconf.com/i/blocks/social/twitter.svg);
