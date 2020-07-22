@@ -1,6 +1,5 @@
-
 .about {
-    padding: 0 120px;
+    // padding: 0 120px;
     margin-bottom: 23px;
 }
 
@@ -9,6 +8,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-right: -39px;
+    @include tablets {
+
+        justify-content: center;
+    }
 }
 
 .about__items {
@@ -18,16 +21,27 @@
     padding: 5px;
     border: 1px solid #979797;
     background-color: #d8d8d8;
-    min-width: 260px;
+    // min-width: 332px;
+    min-width: 28%;
     height: 82px;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 40px;
-    margin-right: 39px;
+    // margin-right: 61px;
+    margin-right: 5%;
     flex: 0;
 
     &:last-child {
         flex: 1;
+    }
+
+    @include tablets {
+
+        margin-right: 39px;
+        min-width: 80%;
+        &:last-child {
+            flex: 0;
+        }
     }
 }
 

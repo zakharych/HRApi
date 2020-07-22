@@ -1,15 +1,15 @@
-.pk-section__title {
-    color: #ffffff;
-}
-.pc-section {   
-    background: url(../img/bg_pattern_03.png) repeat; 
-    background-color: $themecolor2;
-}
+// .pk-section__title {
+//     color: #ffffff;
+// }
+// .pc-section {   
+//     background: url(../img/bg_pattern_03.png) repeat; 
+//     background-color: $themecolor2;
+// }
 .pk {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0px 216px;
+    padding: 0px 6%;
 }
 
 .pk__item {
@@ -17,15 +17,18 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 700;
-    color: #ffffff;
+    // color: #ffffff;
     margin-bottom: 46px;
 }
 .pk__img {
-    height: 260px;
-    width: 260px;
+    // height: 260px;
+    // width: 260px;
+    height: 170px;
+    width: 170px;
     border: 4px solid #ff0000;
+    border: 4px solid #114490;
     border-radius: 50%;
 }
 .pk__avatar {
@@ -45,5 +48,6 @@
 
 .pk__company {
 
-color: #f7e126;
+// color: #f7e126;
+color: #114490;
 }

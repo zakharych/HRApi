@@ -10,17 +10,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0px 114px;
+    // padding: 0px 114px;
     margin-bottom: -48px;
 
 }
 
 .before__item {
-    width: 32%;
     margin-right: 10px;
     margin-bottom: 48px;
-    cursor: pointer;
+
+    &-link {
+        display: block;
+        
+    }
 }
+
 .before__img {    
     width: 362px;
     height: 250px;

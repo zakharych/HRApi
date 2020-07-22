@@ -383,14 +383,14 @@ body {
 }
 
 .container {
-  width: 1400px;
+  max-width: 1140px;
+  width: 95%;
   margin: 0 auto;
 }
 
 .section {
   padding-top: 55px;
   padding-bottom: 100px;
-  min-width: 1400px;
 }
 
 h1 {
@@ -884,7 +884,6 @@ button:hover {
 
 .hero__date {
   font-size: 35px;
-  margin-bottom: 70px;
 }
 
 .hero__buy {
@@ -897,7 +896,6 @@ button:hover {
 }
 
 .about {
-  padding: 0 120px;
   margin-bottom: 23px;
 }
 
@@ -908,6 +906,12 @@ button:hover {
   margin-right: -39px;
 }
 
+@media screen and (max-width: 768px) {
+  .about__list {
+    justify-content: center;
+  }
+}
+
 .about__items {
   display: flex;
   align-items: center;
@@ -915,17 +919,27 @@ button:hover {
   padding: 5px;
   border: 1px solid #979797;
   background-color: #d8d8d8;
-  min-width: 260px;
+  min-width: 28%;
   height: 82px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 40px;
-  margin-right: 39px;
+  margin-right: 5%;
   flex: 0;
 }
 
 .about__items:last-child {
   flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .about__items {
+    margin-right: 39px;
+    min-width: 80%;
+  }
+  .about__items:last-child {
+    flex: 0;
+  }
 }
 
 .about__text {
@@ -940,7 +954,7 @@ button:hover {
 
 .speakers {
   color: #fff;
-  padding: 0px 40px;
+  padding: 0px 10px;
 }
 
 .speakers__title {
@@ -984,6 +998,7 @@ button:hover {
 
 .speaker__item {
   margin-bottom: 52px;
+  margin-right: 5px;
 }
 
 .speaker__item:hover .speaker__img {
@@ -992,11 +1007,12 @@ button:hover {
 }
 
 .speaker__img {
-  height: 260px;
-  width: 260px;
+  height: 214px;
+  width: 214px;
   border: 4px solid #fde300;
   border-radius: 50%;
   margin-bottom: 7px;
+  margin-right: 5px;
 }
 
 .speaker__avatar {
@@ -1033,7 +1049,6 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 190px;
   margin: auto;
   margin-bottom: -79px;
 }
@@ -1056,20 +1071,11 @@ button:hover {
   font-weight: 700;
 }
 
-.pk-section__title {
-  color: #ffffff;
-}
-
-.pc-section {
-  background: url(../img/bg_pattern_03.png) repeat;
-  background-color: #e73a47;
-}
-
 .pk {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0px 216px;
+  padding: 0px 6%;
 }
 
 .pk__item {
@@ -1077,16 +1083,16 @@ button:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
-  color: #ffffff;
   margin-bottom: 46px;
 }
 
 .pk__img {
-  height: 260px;
-  width: 260px;
+  height: 170px;
+  width: 170px;
   border: 4px solid #ff0000;
+  border: 4px solid #114490;
   border-radius: 50%;
 }
 
@@ -1099,11 +1105,7 @@ button:hover {
 }
 
 .pk__company {
-  color: #f7e126;
-}
-
-.price {
-  padding: 0 120px;
+  color: #114490;
 }
 
 .price-section__title {
@@ -1159,13 +1161,13 @@ button:hover {
 .ticket {
   font: 400 16px/1.42 'Open Sans', sans-serif;
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 4%;
   position: relative;
   width: 48%;
 }
 
 .ticket:nth-child(odd) {
-  margin-right: 40px;
+  margin-right: 4%;
 }
 
 .ticket:last-child {
@@ -1523,15 +1525,16 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0px 114px;
   margin-bottom: -48px;
 }
 
 .before__item {
-  width: 32%;
   margin-right: 10px;
   margin-bottom: 48px;
-  cursor: pointer;
+}
+
+.before__item-link {
+  display: block;
 }
 
 .before__img {

@@ -7,25 +7,26 @@ $(document).ready(function(){
     slidesToShow: 4,
     slidesToScroll: 4,
     rows: 2,
+    dots: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1060,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 830,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
