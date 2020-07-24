@@ -234,6 +234,24 @@
     color: #000000;
     font-size: 21px;
     line-height: 1.4;
+
+    &--hidden {overflow: hidden;
+        height: 0;
+        text-align: center;
+        padding: 0 0.05556rem;
+        transition: height .3s;
+        position: absolute;
+        top: 100%;
+    }
+}
+
+.condition__button {
+    border: none;
+    background-color: transparent;
+    &::before {
+        content: "arrow_downward";
+        font-family: 'Material Icons';
+    }
 }
 
 .ticket__button {

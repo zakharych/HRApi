@@ -1094,12 +1094,12 @@ button:hover {
 }
 
 .material-icons-big {
-  font-size: 130px;
+  font-size: 50px;
   color: #333;
 }
 
 .format__title {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -1358,6 +1358,26 @@ button:hover {
   line-height: 1.4;
 }
 
+.condition__item-title--hidden {
+  overflow: hidden;
+  height: 0;
+  text-align: center;
+  padding: 0 0.05556rem;
+  transition: height .3s;
+  position: absolute;
+  top: 100%;
+}
+
+.condition__button {
+  border: none;
+  background-color: transparent;
+}
+
+.condition__button::before {
+  content: "arrow_downward";
+  font-family: 'Material Icons';
+}
+
 .ticket__button {
   align-self: center;
   font-size: 24px;
@@ -1607,7 +1627,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 24px;
+  font-size: 18px;
   flex-wrap: wrap;
 }
 
@@ -1648,8 +1668,8 @@ button:hover {
 
 .socials__item {
   display: inline-block;
-  width: 52px;
-  height: 52px;
+  width: 42px;
+  height: 42px;
   background-image: url(https://ostconf.com/i/blocks/social/twitter.svg);
   background-color: rgba(0, 0, 0, 0.25);
   background-repeat: no-repeat;
