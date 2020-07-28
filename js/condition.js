@@ -1,25 +1,26 @@
-const openItem = item => {
-    const container = item.closest('.team__item');
-    const contentBlock = container.find(".team__content");
-    const textBlock = contentBlock.find(".team__content-block");
-    const reqHeight = textBlock.height();
 
+const openItem = item => {
+    const container = item.closest('.ticket');
+    const contentBlock = container.find(".condition__item-info");
+    const textBlock = contentBlock.find(".condition__item-titleblock");
+    const reqHeight = textBlock.height();
+console.log("jg");
     container.addClass("active")
     contentBlock.height(reqHeight);
 }
 
 const closeEveryItem = container => {
-    const item = container.find('.team__content');
-    const itemContainer = container.find(".team__item");
+    const item = container.find('.condition__item-info');
+    const itemContainer = container.find(".ticket");
 
     itemContainer.removeClass("active");
-    item.height(0);
+    item.height(0); 
 }
 
-$('.team__title').click(e => {
+$('.condition__button').click(e => {
     const $this = $(e.currentTarget);
-    const container = $this.closest('.team');
-    const elemContainer = $this.closest(".team__item");
+    const container = $this.closest('.tickets');
+    const elemContainer = $this.closest(".ticket");
 
     if (elemContainer.hasClass("active")) {
         closeEveryItem(container);
@@ -29,4 +30,5 @@ $('.team__title').click(e => {
     }
 
 
-});
+}
+);

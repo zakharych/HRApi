@@ -1350,6 +1350,7 @@ button:hover {
 .condition__item {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .condition__item-title {
@@ -1358,13 +1359,15 @@ button:hover {
   line-height: 1.4;
 }
 
-.condition__item-title--hidden {
+.condition__item-info {
+  color: #000000;
+  font-size: 21px;
+  line-height: 1.4;
   overflow: hidden;
   height: 0;
   text-align: center;
   padding: 0 0.05556rem;
   transition: height .3s;
-  position: absolute;
   top: 100%;
 }
 

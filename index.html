@@ -8,9 +8,9 @@
         href="https://it-events.com/system/attachments/files/000/001/815/original/favicon_32.ico?1591187094">
     <link rel="icon" type="image/png" sizes="16x16"
         href="https://it-events.com/system/attachments/files/000/001/814/original/favicon_16.ico?1591187070"> -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
@@ -372,7 +372,7 @@
                         </a>
                     </li>
                     <li class="before__item">
-                        <a href="https://hrapiconf.com/HRAPI_2018/materials"  class="before__item-link" target="_blank">
+                        <a href="https://hrapiconf.com/HRAPI_2018/materials" class="before__item-link" target="_blank">
                             <div class="before__img">
                                 <img src="./img/bofore__img.png" alt="Фото с события" class="before__image">
                             </div>
@@ -380,7 +380,7 @@
                         </a>
                     </li>
                     <li class="before__item">
-                        <a href="https://hrapiconf.com/HRAPI_2017/materials" class="before__item-link"  target="_blank">
+                        <a href="https://hrapiconf.com/HRAPI_2017/materials" class="before__item-link" target="_blank">
                             <div class="before__img">
                                 <img src="./img/bofore__img.png" alt="Фото с события" class="before__image">
                             </div>
@@ -388,7 +388,7 @@
                         </a>
                     </li>
                     <li class="before__item">
-                        <a href="https://it-events.com/events/5905/materials" class="before__item-link"  target="_blank">
+                        <a href="https://it-events.com/events/5905/materials" class="before__item-link" target="_blank">
                             <div class="before__img">
                                 <img src="./img/bofore__img.png" alt="Фото с события" class="before__image">
                             </div>
@@ -396,7 +396,7 @@
                         </a>
                     </li>
                     <li class="before__item">
-                        <a href="https://it-events.com/events/3120/materials"  class="before__item-link" target="_blank">
+                        <a href="https://it-events.com/events/3120/materials" class="before__item-link" target="_blank">
                             <div class="before__img">
                                 <img src="./img/bofore__img.png" alt="Фото с события" class="before__image">
                             </div>
@@ -404,7 +404,7 @@
                         </a>
                     </li>
                     <li class="before__item">
-                        <a href="https://it-events.com/events/1889/materials" class="before__item-link"  target="_blank">
+                        <a href="https://it-events.com/events/1889/materials" class="before__item-link" target="_blank">
                             <div class="before__img">
                                 <img src="./img/bofore__img.png" alt="Фото с события" class="before__image">
                             </div>
@@ -712,7 +712,7 @@
                             </div>
                             <div class=" right  right--after"></div>
                         </a>
-                        <a href="https://hrapiconf.com/registration#form" target="_blank" class="ticket ticket--less-height">
+                        <div class="ticket ticket--less-height">
                             <div class="left"></div>
                             <div class="content content--just-text">
 
@@ -724,23 +724,33 @@
                                     <span class="tickets__price-summ">5 000</span>
                                     <span class="tickets__price-cyrency">₽</span>
                                 </div>
+
+
+                                <button class="condition__button">Детали</button>
                                 <ul class="ticket__list">
                                     <li class="condition__item">
 
-                                        <span class="condition__item-title">
-                                            Если вы хотите разделить билет между двумя
-                                            людьми (один человек приходит в первый
-                                            день конференции, другой - во второй день),
-                                            взимается дополнительная плата.
-                                        </span>
+                                        <div class="condition__item-info">
+                                            <div class="condition__item-titleblock">
+                                                Если вы хотите разделить билет между двумя
+                                                людьми (один человек приходит в первый
+                                                день конференции, другой - во второй день),
+                                                взимается дополнительная плата.
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
-                                <button class="button__buy ticket__button button">Купить билет</button>
+                                
+                                <a href="https://hrapiconf.com/registration#form"
+                                    class="button__buy ticket__button button">Купить билет</a>
 
                             </div>
                             <div class=" right  right--after"></div>
-                        </a>
-                        <a href="https://hrapiconf.com/registration#form" target="_blank" class="ticket">
+                        </div>
+
+
+                        <a href="https://hrapiconf.com/registration#form" style="display: none" target="_blank"
+                            class="ticket">
                             <div class="left"></div>
                             <div class="content content--just-text">
 
@@ -779,7 +789,9 @@
                             <div class=" right  right--after"></div>
                         </a>
 
-                        <a href="https://hrapiconf.com/registration#form" style="display: none;" target="_blank" class="ticket">
+                        <!-- тестовый блок -->
+
+                        <div href="https://hrapiconf.com/registration#form" target="_blank" class="ticket">
                             <div class="left"></div>
                             <div class="content content--just-text">
 
@@ -794,30 +806,34 @@
                                     <p class="tickets__price-condition">Предложение дествительно до 1 сентября</p>
 
                                 </div>
+
+                                <button class="condition__button">Детали</button>
                                 <ul class="ticket__list">
                                     <li class="condition__item">
-                                        <button class="condition__button">Детали</button>
 
-                                        <span class="condition__item-title condition__item-title--hidden">
-                                            After party состоится вечером второго дня
-                                            конференции.
-                                            Трансфер до места проведения от отеля
-                                            конференции предоставляется.
-                                            Участие доступно только для участников
-                                            конференции.
-                                            Организатор осталяет за собой право
-                                            отказать в участии, если вы не являетесь
-                                            участником конференции.
-                                            Проход на After party по бейджам
-                                            конференции.
-                                        </span>
+                                        <div class="condition__item-info">
+                                            <div class="condition__item-titleblock">
+                                                After party состоится вечером второго дня
+                                                конференции.
+                                                Трансфер до места проведения от отеля
+                                                конференции предоставляется.
+                                                Участие доступно только для участников
+                                                конференции.
+                                                Организатор осталяет за собой право
+                                                отказать в участии, если вы не являетесь
+                                                участником конференции.
+                                                Проход на After party по бейджам
+                                                конференции.
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
-                                <div class="button__buy ticket__button button">Купить билет</div>
+                                <a href="https://hrapiconf.com/registration#form"
+                                    class="button__buy ticket__button button">Купить билет</a>
 
                             </div>
                             <div class=" right  right--after"></div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>

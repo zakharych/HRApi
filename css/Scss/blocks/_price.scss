@@ -4,6 +4,7 @@
 .price-section__title {
     color: #000000;
 }
+
 .price__table {
     width: 100%;
     border-collapse: collapse;
@@ -228,26 +229,42 @@
 .condition__item {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .condition__item-title {
     color: #000000;
     font-size: 21px;
     line-height: 1.4;
+    // &--hidden {overflow: hidden;
+    //     height: 0;
+    //     text-align: center;
+    //     padding: 0 0.05556rem;
+    //     transition: height .3s;
+    //     position: absolute;
+    //     top: 100%;
+    // }
+}
 
-    &--hidden {overflow: hidden;
-        height: 0;
-        text-align: center;
-        padding: 0 0.05556rem;
-        transition: height .3s;
-        position: absolute;
-        top: 100%;
-    }
+
+.condition__item-info {
+
+    color: #000000;
+    font-size: 21px;
+    line-height: 1.4;
+    overflow: hidden;
+    height: 0;
+    text-align: center;
+    padding: 0 0.05556rem;
+    transition: height .3s;
+    top: 100%;
+
 }
 
 .condition__button {
     border: none;
     background-color: transparent;
+
     &::before {
         content: "arrow_downward";
         font-family: 'Material Icons';
@@ -303,7 +320,7 @@
 .list {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 50px;    
+    margin-bottom: 50px;
     margin-right: -56px;
 }
 
@@ -334,9 +351,9 @@
 
 .date__post {
     margin-bottom: 18px;
-    
-font-size: 21px;
-font-weight: 400;
+
+    font-size: 21px;
+    font-weight: 400;
 
     &--active {
 
