@@ -16,7 +16,7 @@
 }
 .header__menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     @include tablets {
 

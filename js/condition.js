@@ -4,9 +4,9 @@ const openItem = item => {
     const contentBlock = container.find(".condition__item-info");
     const textBlock = contentBlock.find(".condition__item-titleblock");
     const reqHeight = textBlock.height();
-console.log("jg");
     container.addClass("active")
     contentBlock.height(reqHeight);
+    console.log(reqHeight);
 }
 
 const closeEveryItem = container => {

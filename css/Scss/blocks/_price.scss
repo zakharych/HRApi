@@ -202,6 +202,12 @@
     position: relative;
     margin-top: 7px;
 
+    &--indropdown {
+        
+    margin-top: 0px;
+    padding-top: 7px;
+    }
+
     &::after {
         background-color: rgb(102, 102, 102);
         content: " ";

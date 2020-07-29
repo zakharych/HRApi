@@ -739,7 +739,7 @@ button:hover {
 
 .header__menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -1322,6 +1322,11 @@ button:hover {
   color: #6e6e6e;
   position: relative;
   margin-top: 7px;
+}
+
+.tickets__price-sale--indropdown {
+  margin-top: 0px;
+  padding-top: 7px;
 }
 
 .tickets__price-sale::after {
