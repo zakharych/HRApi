@@ -6,7 +6,7 @@ $(document).ready(function(){
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
-    rows: 2,
+    rows: 3,
     dots: false,
     responsive: [
       {
