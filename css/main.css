@@ -772,8 +772,12 @@ button:hover {
   position: absolute;
   top: 16px;
   left: 20px;
-  width: 170px;
+  width: 180px;
   height: 106px;
+}
+
+.logo__link {
+  display: block;
 }
 
 .logo__img {
@@ -781,7 +785,6 @@ button:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 5px;
 }
 
 .header-title:last-child {
@@ -1038,7 +1041,7 @@ button:hover {
 }
 
 .speaker__item {
-  min-height: 295px;
+  min-height: 325px;
 }
 
 .speaker__item:hover .speaker__img {
