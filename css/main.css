@@ -993,6 +993,10 @@ button:hover {
   color: #fff;
 }
 
+.speaker__slider {
+  margin-bottom: 10px;
+}
+
 .slick-prev, .slick-next {
   height: 94px;
   width: 52px;
@@ -1019,6 +1023,11 @@ button:hover {
   content: url(https://it-events.com/system/ckeditor/pictures/25791/original_right.png);
 }
 
+.slick-dots li.slick-active button::before,
+.slick-dots li button::before {
+  color: #f7e126;
+}
+
 .speakers__list {
   padding: 0px 50px;
 }
@@ -1029,7 +1038,7 @@ button:hover {
 }
 
 .speaker__item {
-  min-height: 370px;
+  min-height: 295px;
 }
 
 .speaker__item:hover .speaker__img {
@@ -1038,8 +1047,8 @@ button:hover {
 }
 
 .speaker__img {
-  height: 214px;
-  width: 214px;
+  height: 150px;
+  width: 150px;
   border: 4px solid #fde300;
   border-radius: 50%;
   margin-bottom: 7px;
@@ -1062,13 +1071,14 @@ button:hover {
 .speaker__title {
   text-align: center;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
 }
 
 .speaker__name {
-  line-height: 1;
-  font-size: 18px;
+  line-height: 1.1;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .speaker__company {
@@ -1103,6 +1113,10 @@ button:hover {
   font-weight: 700;
 }
 
+.pc-section {
+  padding-bottom: 0;
+}
+
 .pk {
   display: flex;
   flex-wrap: wrap;
@@ -1115,15 +1129,16 @@ button:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   margin-bottom: 46px;
   width: 20%;
 }
 
 .pk__name {
-  line-height: 1;
-  font-size: 18px;
+  line-height: 1.1;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .pk__company {
@@ -1137,6 +1152,7 @@ button:hover {
   border: 4px solid #ff0000;
   border: 4px solid #114490;
   border-radius: 50%;
+  margin-bottom: 7px;
 }
 
 .pk__avatar {

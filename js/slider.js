@@ -4,9 +4,9 @@ $(document).ready(function(){
     $('.speakers__list').slick({
     infinite: false,
     speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    rows: 3,
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    rows: 2,
     dots: false,
     responsive: [
       {
