@@ -242,14 +242,7 @@
     color: #000000;
     font-size: 21px;
     line-height: 1.4;
-    // &--hidden {overflow: hidden;
-    //     height: 0;
-    //     text-align: center;
-    //     padding: 0 0.05556rem;
-    //     transition: height .3s;
-    //     position: absolute;
-    //     top: 100%;
-    // }
+    margin-left: 10px;
 }
 
 
@@ -330,9 +323,6 @@
 
 
 // слайднер даты
-.date-slider {
-    // padding: 0 70px;
-}
 
 .list {
     display: flex;

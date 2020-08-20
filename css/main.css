@@ -1388,6 +1388,7 @@ button:hover {
   color: #000000;
   font-size: 21px;
   line-height: 1.4;
+  margin-left: 10px;
 }
 
 .condition__item-info {
