@@ -1106,7 +1106,7 @@ button:hover {
   margin-bottom: 79px;
 }
 
-.material-icons-big {
+.material-icons--big {
   font-size: 50px;
   color: #333;
 }
@@ -1420,13 +1420,20 @@ button:hover {
   margin: auto 0;
 }
 
-.material-icons--green {
+.material-icon {
   font-weight: bold;
   font-size: 30px;
-  color: #3aa935;
   align-self: flex-start;
   margin-right: 5px;
   line-height: 1;
+}
+
+.material-icon--green {
+  color: #3aa935;
+}
+
+.material-icon--red {
+  color: #e03626;
 }
 
 .ticket:hover .content {

@@ -286,13 +286,24 @@
 }
 
 
-.material-icons--green {
+.material-icon {
+
     font-weight: bold;
     font-size: 30px;
-    color: #3aa935;
     align-self: flex-start;
     margin-right: 5px;
     line-height: 1;
+
+    &--green{        
+        color: #3aa935;
+    }
+
+    &--red {
+        color: #e03626;
+    }
+    
+
+
 }
 
 
