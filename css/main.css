@@ -1585,8 +1585,8 @@ button:hover {
 .partners__link {
   text-decoration: none;
   display: flex;
-  width: 175px;
-  height: 50px;
+  width: 270px;
+  height: 100px;
   justify-content: center;
   align-items: center;
   flex: 1;
@@ -1597,6 +1597,11 @@ button:hover {
 .partners__link:hover {
   filter: grayscale(0%);
   transform: scale(1.1);
+}
+
+.info-partners__link {
+  width: 175px;
+  height: 50px;
 }
 
 .partners__img {
