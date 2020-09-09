@@ -1585,8 +1585,8 @@ button:hover {
 .partners__link {
   text-decoration: none;
   display: flex;
-  width: 270px;
-  height: 100px;
+  width: 175px;
+  height: 50px;
   justify-content: center;
   align-items: center;
   flex: 1;
