@@ -1,36 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
 
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KG46WLW');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(49985668, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/49985668" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <meta name="google-site-verification" content="UJK5VuiahJ6xrpssPOoASorn26IDk672b4-qkknpsas" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1500">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+
+    <link rel="stylesheet" href="https://it-events.com/system/attachments/files/000/001/920/original/main.css">
+
+    <title>HR API</title>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KG46WLW" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper">
         <section class="main-header">
             <div class="container">
                 <header class="header">
                     <div class="logo">
-                        <a href="/"><img src="https://it-events.com/system/event_photos/imgs/000/013/065/original/photo_2020-06-03_14.42.22_3-01.jpg" alt="logo" class="logo__img"></a>
+                        <a href="/" class="logo__link"><img
+                                src="https://it-events.com/system/ckeditor/pictures/25806/original_logo_hrapi.png"
+                                alt="logo" class="logo__img"></a>
                     </div>
-                    <div class="header-col">
-                        <div class="header-buttons">
+                    <div class="header__menu">
+                        <div class="header-col">
                             <nav class="buttons">
                                 <ul class="buttons__list">
                                     <li class="buttons__item">
-                                        <a href="https://ostconf.com/registration#form " target=" _blank">
+                                        <a href="https://hrapiconf.com/registration#form" target=" _blank">
                                             <button class=" button button__buy">
-                                                Купить билет
+                                                Купить видеозаписи
+                                            </button>
+                                        </a>
+                                    <li class="buttons__item">
+                                        <a href="#speaker">
+                                            <button class="button">
+                                                Спикеры
                                             </button>
                                         </a>
                                     </li>
+
                                     <li class="buttons__item">
-                                        <a href="https://piterpy.com/materials " target=" _blank">
-                                            <button class=" button">
+                                        <a href="https://hrapiconf.com/program" target=" _blank">
+                                            <button class="button">
                                                 Программа
                                             </button>
                                         </a>
                                     </li>
                                     <li class="buttons__item">
-                                        <a href="https://ostconf.com/speaker#form" target=" _blank">
-                                            <button class=" button">
-                                                Подать доклад
+                                        <a href="https://hrapiconf.com/materials" target=" _blank">
+                                            <button class="button">
+                                                Материалы
                                             </button>
                                         </a>
                                     </li>
-                                    
+
+
                                     <li class="buttons__item">
                                         <a href="#price">
                                             <button class="button">
@@ -38,739 +102,1736 @@
                                             </button>
                                         </a>
                                     </li>
-                                    <li class="buttons__item">
-                                        <a href="https://it-events.com/system/attachments/files/000/001/811/original/CODE_OF_CONDUCT_OSTconf0.pdf"
-                                            target="_blank">
-                                            <button class="button">
-                                                CoC
-                                            </button>
-                                        </a>
-                                    </li>
-                                    <li class="buttons__item">
-                                        <a href="#contacts">
-                                            <button class="button">
-                                                Контакты
-                                            </button>
-                                        </a>
-                                    </li>
                                 </ul>
                             </nav>
                         </div>
-                    </div>
-                    <div class="header-col">
+                        <div class="header-col">
 
-                        <div class="socials-head">
-                            <ul class="socials-head__list">
-                                <li class="socials-head__item social__item-tw">
-                                    <a class="socials-head__link" href="https://twitter.com/OSTconf"
-                                        target=" _blank"></a>
-                                </li>
-                                <li class="socials-head__item social__item-vk">
-                                    <a class="socials-head__link" href="https://vk.com/ostconf" target=" _blank"></a>
-                                </li>
-                                <li class="socials-head__item social__item-fb">
-                                    <a class="socials-head__link" href="https://www.facebook.com/OSTconf/"
-                                        target=" _blank"></a>
-                                </li>
-                                <li class="socials-head__item social__item-yb">
-                                    <a class="socials-head__link" href="https://www.youtube.com/OSTconf"
-                                        target=" _blank"></a>
-                                </li>
-                                <li class="socials-head__item social__item-tg">
-                                    <a class="socials-head__link" href="https://t.me/OSTconf_channel"
-                                        target=" _blank"></a>
-                                </li>
-                            </ul>
-                            <div class="social-head__tag">#OSTconf</div>
+                            <div class="socials-head">
+                                <ul class="socials-head__list">
+                                    <li class="socials-head__item social__item-tw">
+                                        <a class="socials-head__link" href="https://twitter.com/hrapiconf"
+                                            target=" _blank"></a>
+                                    </li>
+                                    <li class="socials-head__item social__item-vk">
+                                        <a class="socials-head__link" href="https://vk.com/hrapiconf"
+                                            target=" _blank"></a>
+                                    </li>
+                                    <li class="socials-head__item social__item-fb">
+                                        <a class="socials-head__link" href="https://www.facebook.com/HRAPIConf/"
+                                            target=" _blank"></a>
+                                    </li>
+                                    <li class="socials-head__item social__item-yb">
+                                        <a class="socials-head__link" href="https://www.youtube.com/hrapiconf"
+                                            target=" _blank"></a>
+                                    </li>
+                                    <li class="socials-head__item social__item-tg">
+                                        <a class="socials-head__link" href="https://t.me/hrapiconf"
+                                            target=" _blank"></a>
+                                    </li>
+                                </ul>
+                                <div class="social-head__tag">#HRAPI</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="header-col">  
-                        <a href="/en" class="lang__button" title="switch language">                            
-                            Eng
-                        </a>    
                     </div>
                 </header>
         </section>
-
-        <section class="hero-section">
+        <section class="hero-section section">
             <div class="container">
-                <div class="hero">                    
+                <div class="hero">
                     <div class="hero__desc">
-                        <div class="hero__title-ex">Ex. Linux Piter</div>                    
-                        <h1 class="hero__title">Open Source Tech Conference</h1>
-                        <p class="hero__date">10 — 13 августа 2020</p>
+                        <h1 class="hero__title">HR API</h1>
+                        <p class="hero__date">24 – 26 сентября 2020</p>
                     </div>
-                    <a href="https://ostconf.com/registration#form" target="_blank" class="hero__buy">
-                        <button class="button__buy hero__button button">Купить билет</button>
+                    <a href="https://hrapiconf.com/registration#form" target="_blank" class="hero__buy">
+                        <button class="button__buy hero__button button">Купить видеозаписи</button>
                     </a>
                 </div>
             </div>
         </section>
-        
-        <div class="container__about">
+
+        <section class="container__about section">
             <div class="container">
 
-                <h2 class="about__header">Тематика конференции</h2>
+                <h2 class="section-title">Тематика конференции</h2>
                 <div class="about">
                     <ul class="about__list">
                         <li class="about__items about__card">
                             <div class="about__text">
-                                <h3 class="about__title">NETWORK</h3>
-                                <ul class="about__captions">
-                                    <li class="about__item">Linux kernel network stack (eBPF, core protocols, device
-                                        drivers, routing, TC, Netfilter, XFRM, etc.)</li>
-                                    <li class="about__item">Linux networking APIs for user-space (best practices,
-                                        limitations, performance, scalability, etc.)</li>
-                                    <li class="about__item">High-performance networking in Linux (XDP, DPDK, hardware
-                                        offloads)</li>
-                                    <li class="about__item">Networking for VMs and containers</li>
-                                </ul>
+                                Рекрутинг
                             </div>
                         </li>
 
                         <li class="about__items about__card">
                             <div class="about__text">
-                                <h3 class="about__title">OBSERVABILITY AND PERFORMANCE ANALYSIS</h3>
-                                <ul class="about__captions">
-                                    <li class="about__item">eBPF, BCC and friends</li>
-                                    <li class="about__item">ftrace, perf, and tools</li>
-                                    <li class="about__item">Linux debugging and troubleshooting</li>
-                                    <li class="about__item">Linux performance tuning</li>
-                                </ul>
+                                Мотивация
                             </div>
                         </li>
                         <li class="about__items about__card">
                             <div class="about__text">
-                                <h3 class="about__title">SERVER AND STORAGE</h3>
-                                <ul class="about__captions">
-                                    <li class="about__item">Support for new hardware and protocols (SMR, NVMe and
-                                        NVMe-oF,
-                                        LightNVM/OpenChannel SSD, etc.)</li>
-                                    <li class="about__item">Persistent memory in Linux (NVDIMMs, DAX, PM-aware
-                                        filesystems,
-                                        etc.)</li>
-                                    <li class="about__item">Linux filesystems and distributed storage (btrfs, xfs, NFS,
-                                        SMB,
-                                        Ceph, GlusterFS, etc.)</li>
-                                    <li class="about__item">Linux memory management</li>
-                                    <li class="about__item">Storage performance and scalability </li>
-                                    <li class="about__item">Open-source databases</li>
-                                </ul>
+                                Адаптация
                             </div>
                         </li>
                         <li class="about__items about__card">
                             <div class="about__text">
-                                <h3 class="about__title">CLOUD</h3>
-                                <ul class="about__captions">
-                                    <li class="about__item">Open source cloud stacks (OpenStack, CloudStack, oVirt, etc)
-                                    </li>
-                                    <li class="about__item">Open source SDN/SDS (OpenvSwitch, GlusterFS, etc)</li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="about__items about__card">
-                            <div class="about__text">
-                                <h3 class="about__title">VIRTUALIZATION</h3>
-                                <ul class="about__captions">
-                                    <li class="about__item">QEMU/KVM high performance I/O (virtio, vhost, data-planes)
-                                    </li>
-                                    <li class="about__item">Virtualization management (libvirt and project built on top
-                                        of
-                                        it)</li>
-                                    <li class="about__item">General virtualization topics (nested virtualization, live
-                                        migration, QoS)</li>
-                                    <li class="about__item">Containers under the covers (cgroups, namespaces,
-                                        capabilities)
-                                    </li>
-                                    <li class="about__item">Container runtimes, networking, storage, and security</li>
-                                    <li class="about__item">Container M&O (K8s, Docker, etc</li>
-                                </ul>
+                                HR-брендинг
                             </div>
                         </li>
                         <li class="about__items about__card">
                             <div class="about__text">
-                                <h3 class="about__title">EMBEDDED & MOBILE</h3>
-                                <ul class="about__captions">
-                                    <li class="about__item">Linux-based electronic systems development</li>
-                                    <li class="about__item">Open source mobile operating systems</li>
-                                    <li class="about__item">Kernel and system software tuned for embedded application
-                                    </li>
-                                </ul>
+                                C&B
+                            </div>
+                        </li>
+                        <li class="about__items about__card">
+                            <div class="about__text">
+                                Конфликты
+                            </div>
+                        </li>
+                        <li class="about__items about__card">
+                            <div class="about__text">
+                                Коммуникации
+                            </div>
+                        </li>
+                        <li class="about__items about__card">
+                            <div class="about__text">
+                                HR-Обучение
+                            </div>
+                        </li>
+                        <li class="about__items about__card">
+                            <div class="about__text">
+                                Корпоративная
+                                культура
+                            </div>
+                        </li>
+                        <li class="about__items about__card">
+                            <div class="about__text">
+                                Аттестация
+                            </div>
+                        </li>
+                        <li class="about__items about__card">
+                            <div class="about__text">
+                                Работа с данными
+                                (сбор, анализ, прогнозирование)
                             </div>
                         </li>
                     </ul>
-                    
+
                 </div>
-                <a href="https://ostconf.com/speaker#form" target=" _blank">
-                    <button class="button__presen button">Подать доклад</button>
+                <a href="https://hrapiconf.com/program" target=" _blank">
+                    <button class="button__presen button">Программа</button>
                 </a>
             </div>
-        </div>
-
-        <div class="inner-section section--bg--blue">
+        </section>
+        <section class="speaker-section section--red section" id="speaker">
             <div class="container">
                 <div class="speakers">
-                    <p class="section-title">Наши спикеры</p>
-                    <ul class="speaker">
-                        <li class="speaker__item speaker__item--wide">
-                            <a href="#" class="speaker__link"  target=" _blank" target=" _blank">
-                                <div class="speaker__img">
-                                    <img src="https://it-events.com/system/ckeditor/pictures/25635/content_rubanov.png"
-                                        class="speaker__avatar" alt="speaker avatar">
-                                </div>
-                                <div class="speaker__title">
-                                    <p class="speaker__name">Владимир Рубанов</p>
-                                    <p class="speaker__location">Россия. Москва</p>
-                                    <p class="speaker__position">CTO</p>
-                                    <p class="speaker__company">Huawei R&D Russia</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="speaker__item speaker__item--wide">
-                            <a href="#" class="speaker__link"  target=" _blank" target=" _blank">
-                                <div class="speaker__img">
-                                    <img src=" https://it-events.com/system/ckeditor/pictures/25640/content_monty_widenius.png"
-                                        class="speaker__avatar" alt="speaker avatar">
-                                </div>
-                                <div class="speaker__title">
-                                    <p class="speaker__name">Michael “Monty" Widenius</p>
-                                    <p class="speaker__location">Finland. Kauniainen</p>
-                                    <p class="speaker__position"> CTO</p>
-                                    <p class="speaker__company">MariaDB Corporation AB and MariaDB Foundation</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="speaker__item speaker__item--wide">
-                            <a href="#" class="speaker__link"  target=" _blank" target=" _blank">
-                                <div class="speaker__img">
-                                    <img src="https://it-events.com/system/ckeditor/pictures/19049/content_bez_imeni-1.png"
-                                        class="speaker__avatar" alt="speaker avatar">
-                                </div>
-                                <div class="speaker__title">
-                                    <p class="speaker__name">Marian Marinov</p>
-                                    <p class="speaker__location">Bulgaria. Sofia</p>
-                                    <p class="speaker__position">Chief System Architect</p>
-                                    <p class="speaker__company"> SiteGround</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="speaker__item speaker__item--wide">
-                            <a href="#" class="speaker__link"  target=" _blank" target=" _blank">
-                                <div class="speaker__img">
-                                    <img src="https://it-events.com/system/event_photos/imgs/000/013/111/original/Ceco.jpg"
-                                        class="speaker__avatar" alt="speaker avatar">
-                                </div>
-                                <div class="speaker__title">
-                                    <p class="speaker__name">Tzvetomir Stoyanov</p>
-                                    <p class="speaker__location">Bulgaria. Sofia</p>
-                                    <p class="speaker__position">Open Source Engineer</p>
-                                    <p class="speaker__company">VMware</p>
-                                </div>
-                            </a>
-                        </li>
-                            <a href="#" class="speaker__link"  target=" _blank" target=" _blank">
-                                <li class="speaker__item speaker__item--wide">
-                                <div class="speaker__img">
-                                    <img src="https://it-events.com/system/ckeditor/pictures/24721/content_no_photo_boy.png"
-                                        class="speaker__avatar" alt="speaker avatar">
-                                </div>
-                                <div class="speaker__title">
-                                    <p class="speaker__name">Алексей Буданков</p>
-                                    <p class="speaker__location"> </p>
-                                    <p class="speaker__position"> </p>
-                                    <p class="speaker__company">  </p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    
-                    <a href="https://ostconf.com/ru/materials" target=" _blank">
-                        <button class="button__speaker button">Подробнее</button>
-                    </a>
-                </div>
-            </div>
-        </div>
+                    <h2 class="section-title">Спикеры</h2>
+                    <div class="speaker__slider">
+                        <ul class="speakers__list">
 
-        <div class="for-member">
-            <div class="container">
-
-                <div class="condition">
-                    <p class="section-title">Формат конференции</p>
-                    <ul class="format__list">
-                        <li class="format__item">
-                            <span class="material-icons  material-icons-big">
-                                date_range
-                            </span>
-                            <span class="format__title">
-                                10 - 13 августа 2020 <br>
-                                пн - чт  (4 дня)
-                            </span>
-                        </li>
-                        <li class="format__item">
-                            <span class="material-icons  material-icons-big material-icons.md-36">
-                                schedule
-                            </span>
-                            <span class="format__title">
-                                с 17:00 до 20:00 (UTC+3:00) <br>
-                                продолжительность 3 ~ 4 часа                                
-                            </span>
-                        </li>
-                        <li class="format__item">
-                            <span class="material-icons  material-icons-big">
-                                question_answer
-                            </span>
-                            <span class="format__title">
-                                Каждый день по 2-4 доклада + панельная дискуссия, переходящая в afterparty
-                            </span>
-                        </li>
-                        <li class="format__item">
-                            <span class="material-icons  material-icons-big">
-                                language
-                            </span>
-                            <span class="format__title">
-                                Русскоязычная конференция, синхронный перевод иностранных докладов
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-
-
-            </div>
-        </div>
-
-        <div class="memory  section--bg--blue">
-            <div class="container">
-                <div class="memory__section">
-                    <p class="section-title">Как это было раньше </p>
-                    <ul class="memory__list">
-                        <li class="memory__item">
-                            <a href="https://ostconf.com/events/15266/materials"
-                                target="_blank">
-                                <div class="memory__img">
-                                    <img src="https://it-events.com/system/event_photos/imgs/000/013/101/original/Kuznetsov145.jpg"
-                                        alt="Фото с события" class="memory__image">
-                                </div>
-                                <div class="memory__title">Linux Piter 2019</div>
-                            </a>
-                        </li>
-                        <li class="memory__item">
-                            <a href="https://ostconf.com/events/11688/materials"
-                                target="_blank">
-                                <div class="memory__img">
-                                    <img src="https://it-events.com/system/event_photos/imgs/000/013/104/original/Geo058.jpg"
-                                        alt="Фото с события" class="memory__image">
-                                </div>
-                                <div class="memory__title">Linux Piter 2018</div>
-                            </a>
-                        </li>
-                        <li class="memory__item">
-                            <a href="https://ostconf.com/events/9745/materials"
-                                target="_blank">
-                                <div class="memory__img">
-                                    <img src="https://it-events.com/system/event_photos/imgs/000/013/103/original/Kuznetsov063.jpg"
-                                        alt="Фото с события" class="memory__image">
-                                </div>
-                                <div class="memory__title">Linux Piter 2017</div>
-                            </a>
-                        </li>
-                        <li class="memory__item">
-                            <a href="https://ostconf.com/events/6997/materials"
-                                target="_blank">
-                                <div class="memory__img">
-                                    <img src="https://it-events.com/system/event_photos/imgs/000/013/102/original/Kuznetsov140.jpg"
-                                        alt="Фото с события" class="memory__image">
-                                </div>
-                                <div class="memory__title">Linux Piter 2016</div>
-                            </a>
-                        </li>
-                        <li class="memory__item">
-                            <a href="https://ostconf.com/events/4868/materials"
-                                target="_blank">
-                                <div class="memory__img">
-                                    <img src="https://it-events.com/system/event_photos/imgs/000/013/058/original/2015.jpg"
-                                        alt="Фото с события" class="memory__image">
-                                </div>
-                                <div class="memory__title">Linux Piter 2015</div>
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-        <div class="inner-section ">
-            <div class="container">
-                <div class="speakers">
-                    <p class="section-title">Программный комитет</p>
-                    <ul class="speaker">
-                        <li class="pk__item">
-                                <div class="pk__img">
-                                    <img src="https://ostconf.com/system/ckeditor/pictures/15591/content_akop.png" class="speaker__avatar"
-                                        alt="speaker avatar">
-                                </div>
-                                <div class="speaker__title pk__title">
-                                    <p class="speaker__name">Александр Акопян</p>
-                                    <p class="speaker__location">Россия. Санкт-Петербург</p>
-                                    <p class="speaker__position">Engineering Manager </p>
-                                    <p class="speaker__company ">Dell Technologies</p>
-                                </div>
-                        </li>
-                        <li class="pk__item">
-                                <div class="pk__img">
-                                    <img src="https://ostconf.com/system/ckeditor/pictures/15592/content_krin.png" class="speaker__avatar"
-                                        alt="speaker avatar ">
-                                </div>
-                                <div class="speaker__title pk__title">
-                                    <p class="speaker__name">Кирилл Кринкин </p>
-                                    <p class="speaker__location"> Россия. Санкт-Петербург</p>
-                                    <p class="speaker__position"> Заведующий кафедрой</p>
-                                    <p class="speaker__company ">ЛЭТИ</p>
-                                </div>
-                        </li>
-                        <li class="pk__item">
-                                <div class="pk__img">
-                                    <img src="https://ostconf.com/system/ckeditor/pictures/15600/content_kost.png" class="speaker__avatar" alt="speaker avatar">
-                                </div>
-                                <div class="speaker__title pk__title">
-                                    <p class="speaker__name">Дмитрий Костюк</p>
-                                    <p class="speaker__location">Беларусь. Минск</p>
-                                    <p class="speaker__position">Доцент </p>
-                                    <p class="speaker__company ">БГТУ</p>
-                                </div>
-                        </li>
-                        <li class="pk__item">
-                                <div class="pk__img">
-                                    <img src="https://ostconf.com/system/ckeditor/pictures/15598/content_marzh.png" class="speaker__avatar" alt="speaker avatar">
-                                </div>
-                                <div class="speaker__title pk__title">
-                                    <p class="speaker__name">Николай Маржан</p>
-                                    <p class="speaker__location">Украина. Киев</p>
-                                    <p class="speaker__position">Release Engineer</p>
-                                    <p class="speaker__company ">Percona</p>
-                                </div>
-                        </li>
-
-                        <li class="pk__item">
-                                <div class="pk__img">
-                                    <img src="https://it-events.com/system/event_photos/imgs/000/013/113/original/L1SUeNaPQcI.jpg" class="speaker__avatar" alt="speaker avatar">
-                                </div>
-                                <div class="speaker__title pk__title">
-                                    <p class="speaker__name">Роман Аляутдин</p>
-                                    <p class="speaker__location">Россия. Москва</p>
-                                    <p class="speaker__position">Директор департамента разработки ОС и сервисов</p>
-                                    <p class="speaker__company ">Открытая мобильная платформа</p>
-                                </div>
-                        </li>
-                        <li class="pk__item">
-                                <div class="pk__img">
-                                    <img src="https://ostconf.com/system/ckeditor/pictures/15596/content_kriv.png" class="speaker__avatar" alt="speaker avatar">
-                                </div>
-                                <div class="speaker__title pk__title">
-                                    <p class="speaker__name">Дмитрий Кривенок</p>
-                                    <p class="speaker__location">Россия. Санкт-Петербург</p>
-                                    <p class="speaker__position">Ведущий программист</p>
-                                    <p class="speaker__company ">Dell Technologies</p>
-                                </div>
-                        </li>
-                        <li class="pk__item">
-                                <div class="pk__img">
-                                    <img src="https://ostconf.com/system/ckeditor/pictures/25507/content_laperye.png" class="speaker__avatar" alt="speaker avatar">
-                                </div>
-                                <div class="speaker__title pk__title">
-                                    <p class="speaker__name">Андрей Лаперье</p>
-                                    <p class="speaker__location">Финляндия. Эспоо</p>
-                                    <p class="speaker__position">Engineering Manager</p>
-                                    <p class="speaker__company ">Intel</p>
-                                </div>
-                        </li>
-                        <li class="pk__item">
-                                <div class="pk__img">
-                                    <img src="https://ostconf.com/system/ckeditor/pictures/15595/content_emel.png" class="speaker__avatar" alt="speaker avatar">
-                                </div>
-                                <div class="speaker__title pk__title">
-                                    <p class="speaker__name">Павел Емельянов</p>
-                                    <p class="speaker__location">Россия. Москва</p>
-                                    <p class="speaker__position">Разработчик</p>
-                                    <p class="speaker__company ">Scylla</p>
-                                </div>
-                        </li>
-
-                        <li class="pk__item">
-                                <div class="pk__img">
-                                    <img src="https://ostconf.com/system/ckeditor/pictures/23395/content_bokovoy_kruzhochek.png" class="speaker__avatar" alt="speaker avatar">
-                                </div>
-                                <div class="speaker__title pk__title">
-                                    <p class="speaker__name">Александр Боковой</p>
-                                    <p class="speaker__location">Финляндия. Эспоо</p>
-                                    <p class="speaker__position">Sr.Principal Software Engineer</p>
-                                    <p class="speaker__company">Red Hat</p>
-                                </div>
-                        </li>
-                        <li class="pk__item">
-                                <div class="pk__img">
-                                    <img src="https://it-events.com/system/event_photos/imgs/000/013/049/original/DmitrijLevin.png" class="speaker__avatar" alt="speaker avatar">
-                                </div>
-                                <div class="speaker__title pk__title">
-                                    <p class="speaker__name">Дмитрий Левин</p>
-                                    <p class="speaker__location">Россия. Москва</p>
-                                    <p class="speaker__position">Chief Software Architect</p>
-                                    <p class="speaker__company">BaseALT</p>
-                                </div>
-                        </li>
-
-                        <li class="pk__item">
-                                <div class="pk__img">
-                                    <img src="https://ostconf.com/system/ckeditor/pictures/15601/content_tost.png" class="speaker__avatar"
-                                        alt="speaker avatar">
-                                </div>
-                                <div class="speaker__title pk__title">
-                                    <p class="speaker__name">Василий Толстой</p>
-                                    <p class="speaker__location">Россия. Санкт-Петербург</p>
-                                    <p class="speaker__position">Старший ведущий инженер-программист</p>
-                                    <p class="speaker__company">Dell Technologies</p>
-                                </div>
-                        </li>
-
-                        <li class="pk__item">
-                                <div class="pk__img">
-                                    <img src="https://it-events.com/system/event_photos/imgs/000/013/050/original/oooo.plus_187.png" class="speaker__avatar" alt="speaker avatar">
-                                </div>
-                                <div class="speaker__title pk__title">
-                                    <p class="speaker__name">Ирина Сарибекова</p>
-                                    <p class="speaker__location">Россия. Санкт-Петербург</p>
-                                    <p class="speaker__position">Event-менеджер</p>
-                                    <p class="speaker__company">IT-Events</p>
-                                </div>
-                        </li>
-                        <li class="pk__item">
-                                <div class="pk__img">
-                                    <img src="https://ostconf.com/system/ckeditor/pictures/15673/content_den.png" class="speaker__avatar" alt="speaker avatar">
-                                </div>
-                                <div class="speaker__title pk__title">
-                                    <p class="speaker__name">Денис Каланов</p>
-                                    <p class="speaker__location">Россия. Санкт-Петербург</p>
-                                    <p class="speaker__position">CEO</p>
-                                    <p class="speaker__company">IT-Events</p>
-                                </div>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="price">
-            <div class="container">
-                <div class="price__section" id="price">
-                    <p class="section-title">Стоимость</p>
-                    <ul class="list">
-                        <li class="list__item">
-
-                            <div class="test">
-                                <p class="cost cost__post-active">1500 <sapn class="rub-sign">₽</sapn></p>
-                                <div class="dot dot__post-active"></div>
-                                <p class="date__post-active">до 10 июня</p>
-                            </div>
-                        </li>
-                        <li class="list__item">
-                            <div class="line line__active">
-
-                            </div>
-                            <div class="test">
-                                <p class="cost cost__post-active">2000 <sapn class="rub-sign">₽</sapn></p>
-                                <div class="dot dot__post-active"></div>
-                                <p class="date__post-active">до 30 июня</p>
-                            </div>
-                        </li>
-                        <li class="list__item">
-                            <div class="line  line__active">
-
-                            </div>
-                            <div class="test">
-                                <p class="cost cost__active">2500 <sapn class="rub-sign">₽</sapn></p>
-                                <div class="dot  dot__active"></div>
-                                <p>до 31 июля</p>
-                            </div>
-                        </li>
-
-                        <li class="list__item">
-                            <div class="line">
-
-                            </div>
-                            <div class="test">
-                                <p class="cost">3000 <sapn class="rub-sign"><sapn class="rub-sign">₽</sapn></sapn></p>
-                                <div class="dot"></div>
-                                <p>с 1 августа</p>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <div class="tickets">
-                        <div class="wrapper-tickets">
-                            <a href="https://ostconf.com/registration#form" target="_blank" class="tickets__link"></a>
-                            <div class="left ticket"></div>
-                            <div class="content">
-
-                                <div class="ticket__head">
-                                    <h1 class="ticket__title">OSTconf 0</h1>
-                                </div>
-                                <div class="tickets__price">
-                                    <p class="summ ">Бесплатно</p>
-                                </div>
-                                <ul class="ticket__list">
-                                    <li class="condition__item">
-                                        <span class="material-icons check">
-                                            done
-                                        </span>
-                                        <span>
-                                            1ый день: доклады и дискуссия
-                                        </span>
-                                    </li>
-                                    <li class="condition__item">
-                                        <span class="material-icons none">
-                                            clear
-                                        </span>
-                                        <span style="text-decoration: line-through">
-                                            4 дня докладов / лекций / воркшопов
-                                        </span>
-                                    </li>
-                                    <li class="condition__item">
-                                        <span class="material-icons  none">
-                                            clear
-                                        </span>
-                                        <span style="text-decoration: line-through">
-                                            Видеозаписи
-                                        </span>
-                                    </li>
-
-                                </ul>
-                                <button class="button__buy ticket__button button">Зарегистрироваться</button>
-
-                            </div>
-                            <div class=" right  right--after ticket">
-
-                            </div>
-                        </div>
-                        <div class="wrapper-tickets wrapper-tickets--color--green">
-                            <a href="https://ostconf.com/registration#form" target="_blank" class="tickets__link"></a>
-                            <div class="left ticket"></div>
-                            <div class="content">
-
-                                <div class="ticket__head">
-                                    <h1 class="ticket__title">OSTconf 0</h1>
-                                </div>
-                                <div class="tickets__price tickets__promo">
-                                    <span class="summ summ--price">2500</span>
-                                    <span class="curency rub-sign">₽</span>
-                                    <p class="tickets__price-condition">Предложение действительно до 31 июля</p>
-                                </div>
-                                <ul class="ticket__list">
-                                    <li class="condition__item">
-                                        <span class="material-icons check">
-                                            done
-                                        </span>
-                                        <span>
-                                            4 дня докладов / дискуссий / воркшопов
-                                        </span>
-                                    </li>
-                                    <li class="condition__item">
-                                        <span class="material-icons check">
-                                            done
-                                        </span>
-                                        <span>
-                                            Видеозаписи
-                                        </span>
-                                    </li>
-
-                                </ul>
-                                <button class="button__buy ticket__button button">Купить билет</button>
-
-                            </div>
-                            <div class="right ticket">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-
-
-        <div class="partners-section">
-            <div class="container">                
-                <div class="partners">
-                    <p class="section-title  partners__title">Организаторы</p>
-                    <div class="partners__container">
-                        <!-- <div class="partners__category">Организаторы</div> -->
-                        <ul class="partners__list">
-                            <li class="partners__item">
-                                <a href="http://www.it-events.com/" class="partners__link" title="It-event"  target=" _blank">
-                                    <img class="partners__img"
-                                        src="https://ostconf.com/system/companies/logos/000/000/427/original/it-events-logo-white-horizontal_(1).png"
-                                        alt="It-events logo">
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2725#2725" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/24530/content_svetlana_bolsunovskaya.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Светлана </br>
+                                            Болсуновская </p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург </p>
+                                        <p class="speaker__position">Agile Coach, Scrum Master</p>
+                                        <p class="speaker__company">DT IT Solutions</p>
+                                    </div>
                                 </a>
                             </li>
-                            <li class="partners__item">
-                                <a href="http://www.it-dominanta.ru/" class="partners__link" title="it-dominanta"  target=" _blank">
-                                    <img class="partners__img"
-                                        src="https://ostconf.com/system/partners/logos/000/006/494/original/dom-03.png"
-                                        alt="it-dominanta logo">
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2727#2727" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/24532/content_img_4962.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Татьяна </br>
+                                            Аква​</p>
+                                        <p class="speaker__location">Россия. Москва</p>
+                                        <p class="speaker__position">Руководитель отдела рекрутмента</p>
+                                        <p class="speaker__company">Star-Staff</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2754#2754" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/24666/content_untitled-1.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Андрей </br>
+                                            Антошин​</p>
+                                        <p class="speaker__location">Россия. Пермь </p>
+                                        <p class="speaker__position">Руководитель отдела подбора и адаптации персонала
+                                        </p>
+                                        <p class="speaker__company">Parma technologies group</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2796#2796" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25103/content_bez_imeni-1.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name"> Ольга </br>
+                                            Хотянович​ </p>
+                                        <p class="speaker__location">Беларусь. Минск </p>
+                                        <p class="speaker__position">Associate Manager, Learning & Development</p>
+                                        <p class="speaker__company">EPAM</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2810#2810" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25225/content_bez_imeni-1.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Наталья </br>
+                                            Имаева</p>
+                                        <p class="speaker__location">Россия. Уфа </p>
+                                        <p class="speaker__position"> HRBP </p>
+                                        <p class="speaker__company">Modulbank</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2811#2811" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25273/content_bez_imeni-1.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Виктория </br>
+                                            Рарог</p>
+                                        <p class="speaker__location">Россия. Новосибирск </p>
+                                        <p class="speaker__position">IT HR</p>
+                                        <p class="speaker__company">Центр Финансовых Технологий (ЦФТ)</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2746#2746" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25137/content_bez_imeni-1.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Алина </br>
+                                            Чуприкова​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург </p>
+                                        <p class="speaker__position">IT HR</p>
+                                        <p class="speaker__company"> Центр Финансовых Технологий (ЦФТ)</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2779#2779" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25020/content_bez_imeni-1.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Елена </br>
+                                            Колесникова</p>
+                                        <p class="speaker__location">Россия. Ижевск </p>
+                                        <p class="speaker__position">Менеджер по обучению и развитию персонала</p>
+                                        <p class="speaker__company">DIRECTUM</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2803#2803" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/24863/content_bez_imeni-4.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Алексей </br>
+                                            Куксенок​</p>
+                                        <p class="speaker__location">Россия. Воронеж </p>
+                                        <p class="speaker__position">Руководитель проектов</p>
+                                        <p class="speaker__company">DataArt</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2747#2747" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/24605/content_tatyana_melnichuk.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Татьяна </br>
+                                            Мельничук​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург </p>
+                                        <p class="speaker__position">Руководитель компании</p>
+                                        <p class="speaker__company">Lucky Hunter</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2751#2751" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/21852/content_bez_imeni-2.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Сергей </br>
+                                            Шабалин​</p>
+                                        <p class="speaker__location">Россия. Пермь </p>
+                                        <p class="speaker__position">Employer Branding Manager</p>
+                                        <p class="speaker__company">Miro</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="http://hrapiconf.com/materials/2762#2762" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25696/content_parnikel.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Данил​ </br>
+                                            Парникель</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург </p>
+                                        <p class="speaker__position">Training & Development Manager</p>
+                                        <p class="speaker__company">SEMrush</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2764#2764" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/24757/content_untitled-1.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Ирина </br>
+                                            Пушкарёва​</p>
+                                        <p class="speaker__location">Россия. Пермь </p>
+                                        <p class="speaker__position">Employee Experience Manager</p>
+                                        <p class="speaker__company">Miro</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2777#2777" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/24862/content_bez_imeni-3.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Мария </br>
+                                            Чернова​</p>
+                                        <p class="speaker__location">Россия. Ижевск </p>
+                                        <p class="speaker__position">Бренд-менеджер</p>
+                                        <p class="speaker__company">DIRECTUM</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2781#2781" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25024/content_bez_imeni-2.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Мария </br>
+                                            Демичева​</p>
+                                        <p class="speaker__location">Россия. Москва </p>
+                                        <p class="speaker__position">HR Manager </p>
+                                        <p class="speaker__company">1С Game Studios</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2784#2784" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/24963/content_bez_imeni-1.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Константин </br>
+                                            Федяев​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург </p>
+                                        <p class="speaker__position"> Юрист </p>
+                                        <p class="speaker__company"></p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2786#2786" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/24965/content_bez_imeni-2.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Вера </br>
+                                            Манохина​</p>
+                                        <p class="speaker__location">Россия. Новосибирск </p>
+                                        <p class="speaker__position">HRBP Improve Hub</p>
+                                        <p class="speaker__company">Improve Group</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2785#2785" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/24964/content_bez_imeni-3.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Мария </br>
+                                            Белоглазова​</p>
+                                        <p class="speaker__location">Россия. Москва </p>
+                                        <p class="speaker__position">Lead of Services&Opportunities</p>
+                                        <p class="speaker__company">Skyeng</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2795#2795" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25092/content_bez_imeni-4.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Маргарита </br>
+                                            Мкртичян​</p>
+                                        <p class="speaker__location">Россия. Москва</p>
+                                        <p class="speaker__position">Senior employer brand manager</p>
+                                        <p class="speaker__company">makelove employer branding agency</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2812#2812" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25274/content_bez_imeni-1.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name"> Юлия </br>
+                                            Лапытько​ </p>
+                                        <p class="speaker__location">Беларусь. Минск </p>
+                                        <p class="speaker__position">HR Lead</p>
+                                        <p class="speaker__company">Playtika</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2813#2813" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25355/content_bez_imeni-1.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Наталья </br>
+                                            Аверина</p>
+                                        <p class="speaker__location">Новосибирск/Санкт-Петербург/Лондон </p>
+                                        <p class="speaker__position">HRD</p>
+                                        <p class="speaker__company">Magora Systems</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2814#2814" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="/system/ckeditor/pictures/25892/content_kurlat.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Надежда </br>
+                                            Курлат​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург </p>
+                                        <p class="speaker__position">HR Директор</p>
+                                        <p class="speaker__company">Selectel</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2815#2815" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25697/content_fedotova.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Ольга </br>
+                                            Федотова​​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург </p>
+                                        <p class="speaker__position">Communications Specialist</p>
+                                        <p class="speaker__company">EPAM</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2816#2816" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25592/content_vozhakina.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Любовь </br>
+                                            Вожакина​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург </p>
+                                        <p class="speaker__position">Старший арт-менеджер</p>
+                                        <p class="speaker__company">Sperasoft</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2817#2817" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25449/content_valentina_alexandrova.jpg"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name"> Валентина </br>
+                                            Александрова​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург </p>
+                                        <p class="speaker__position">Руководитель отдела аудита и стратегических
+                                            проектов</p>
+                                        <p class="speaker__company">Acsour</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2818#2818" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25452/content_bez_imeni-1.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Татьяна </br>
+                                            Покидько​</p>
+                                        <p class="speaker__location">Россия. Владивосток </p>
+                                        <p class="speaker__position">Директор по персоналу</p>
+                                        <p class="speaker__company">ФарПост</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2819#2819" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25453/content_bez_imeni-1.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Мария </br>
+                                            Херсонова</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург </p>
+                                        <p class="speaker__position">HR PM</p>
+                                        <p class="speaker__company">SoftWise</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2820#2820" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25454/content_bez_imeni-2.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Елена </br>
+                                            Шибаева</p>
+                                        <p class="speaker__location">Польша. Вроцлав </p>
+                                        <p class="speaker__position">HR Marketing специалист</p>
+                                        <p class="speaker__company">DataArt</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2821#2821" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25455/content_bez_imeni-3.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Станислав </br>
+                                            Калацкий​</p>
+                                        <p class="speaker__location">Украина. Днепр </p>
+                                        <p class="speaker__position">HR-директор DataArt (Днепр)</p>
+                                        <p class="speaker__company">DataArt</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2823#2823" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25564/content_stetsenko.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Анастасия </br>
+                                            Стеценко</p>
+                                        <p class="speaker__location">Украина. Киев </p>
+                                        <p class="speaker__position">Brand Advocacy Lead</p>
+                                        <p class="speaker__company">DataArt</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2886#2886" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25897/content_pridatko.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Вика </br>
+                                            Придатко</p>
+                                        <p class="speaker__location">Украина. Киев </p>
+                                        <p class="speaker__position"> Founder </p>
+                                        <p class="speaker__company">VP Team</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2839#2839" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/22182/content_bez_imeni-4.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Егор </br>
+                                            Яценко​</p>
+                                        <p class="speaker__location">Россия. Москва </p>
+                                        <p class="speaker__position"> Основатель </p>
+                                        <p class="speaker__company">Sourcing School</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2854#2854" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25754/content_radchenko.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Дмитрий </br>
+                                            Радченко​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург</p>
+                                        <p class="speaker__position">Senior Recruiter & Brand Ambassador</p>
+                                        <p class="speaker__company">DataArt</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="http://hrapiconf.com/materials/2854#2854" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25755/content_anurova.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Дарья </br>
+                                            Анурова​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург </p>
+                                        <p class="speaker__position">CV Duck Product Owner</p>
+                                        <p class="speaker__company">DataArt</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2780#2780" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25896/content_kurskiy.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Никита​ </br>
+                                            Курский​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург </p>
+                                        <p class="speaker__position">Генеральный директор</p>
+                                        <p class="speaker__company">Intella</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2876#2876" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25846/content_gubernatorova.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Екатерина​​ </br>
+                                            Губернаторова​</p>
+                                        <p class="speaker__location">Россия. Казань </p>
+                                        <p class="speaker__position">Руководитель группы обучения иностранным языкам</p>
+                                        <p class="speaker__company">ICL Services</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2884#2884" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25893/content_bardin.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Никита​​​ </br>
+                                            Бардин​</p>
+                                        <p class="speaker__location">Латвия. Рига </p>
+                                        <p class="speaker__position">Лидер корпоративной программы онбординга</p>
+                                        <p class="speaker__company">DataArt</p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2884#2884" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25894/content_petelina.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Оксана​​​ </br>
+                                            Петелина​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург </p>
+                                        <p class="speaker__position">HRD</p>
+                                        <p class="speaker__company">DataArt </p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2885#2885" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25895/content_vasilets.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Влада​​​ </br>
+                                            Василец​</p>
+                                        <p class="speaker__location">Россия. Пермь </p>
+                                        <p class="speaker__position">Recruiter</p>
+                                        <p class="speaker__company"> Miro </p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2887#2887" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25902/content_ivanov.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Анатолий​​​ </br>
+                                            Иванов​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург </p>
+                                        <p class="speaker__position">Директор по разработке</p>
+                                        <p class="speaker__company"> PropellerAds </p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href=https://hrapiconf.com/materials/2888#2888" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25903/content_andreev.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Александр​​​ </br>
+                                            Андреев​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург</p>
+                                        <p class="speaker__position"> Редактор </p>
+                                        <p class="speaker__company"> DataArt </p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href=https://hrapiconf.com/materials/2888#2888" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25904/content_shunyaev.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Алексей​​​​ </br>
+                                            Шуняев​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург</p>
+                                        <p class="speaker__position"> HR Marketing Lead </p>
+                                        <p class="speaker__company"> DataArt </p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2889#2889" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25906/content_kasper.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Renita​​​​​ </br>
+                                            Käsper​</p>
+                                        <p class="speaker__location">Germany. Berlin</p>
+                                        <p class="speaker__position"> Talent Acquisition Team Lead </p>
+                                        <p class="speaker__company"> Babbel </p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2890#2890" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25908/content_zykina.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Дарья​​​​​ </br>
+                                            Зыкина​</p>
+                                        <p class="speaker__location">Россия. Москва</p>
+                                        <p class="speaker__position"> CEO </p>
+                                        <p class="speaker__company"> Codenrock </p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2891#2891" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25909/content_ivanova.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Дарья​​​​​​ </br>
+                                            Иванова​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург</p>
+                                        <p class="speaker__position"> Principal Recruiter </p>
+                                        <p class="speaker__company"> EPAM </p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2892#2892" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25911/content_kitaeva.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Виктория​​​​​​​ </br>
+                                            Китаева​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург</p>
+                                        <p class="speaker__position">Директор по персоналу</p>
+                                        <p class="speaker__company"> Bercut </p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2896#2896" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25918/content_menshikova.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Екатерина​​​​​​​​ </br>
+                                            Меньшикова​</p>
+                                        <p class="speaker__location">Россия. Ижевск</p>
+                                        <p class="speaker__position">Директор по маркетингу</p>
+                                        <p class="speaker__company"> Пиком </p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2897#2897" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25919/content_okuntseva.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Ксения​​​​​​​​​ </br>
+                                            Окунцева​</p>
+                                        <p class="speaker__location">Таиланд. о.Самуи</p>
+                                        <p class="speaker__position">CEO и основатель</p>
+                                        <p class="speaker__company"> Cellar door </p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2898#2898" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25921/content_aslikyan.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Нарек​​​​​​​​​​ </br>
+                                            Асликян​</p>
+                                        <p class="speaker__location">Армения. Ереван</p>
+                                        <p class="speaker__position">Business development manager</p>
+                                        <p class="speaker__company"> AmazingHiring </p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2899#2899" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25922/content_chigina.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Мария​​​​​​​​​​ </br>
+                                            Чигина​</p>
+                                        <p class="speaker__location">Россия. Пермь</p>
+                                        <p class="speaker__position">HR Team Lead</p>
+                                        <p class="speaker__company"> Xsolla </p>
+                                    </div>
+                                </a>
+                            </li>
+
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2900#2900" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/24628/content_faina_lerner.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Фаина​​​​​​​​​​​ </br>
+                                            Лернер​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург</p>
+                                        <p class="speaker__position">Director, Talent Acquisition and People Mgt</p>
+                                        <p class="speaker__company"> EPAM </p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2902#2902" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25942/content_isaev.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Алексей​​​​​​​​​​​​​ </br>
+                                            Исаев​​​</p>
+                                        <p class="speaker__location">Россия. Москва</p>
+                                        <p class="speaker__position">Talent Director и Partner</p>
+                                        <p class="speaker__company"> gms & g-mate </p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2903#2903" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25943/content_mhargrdzeli.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Софико​​​​​​​​​​​​​ </br>
+                                            Мхаргрдзели​​​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург</p>
+                                        <p class="speaker__position">HR Generalist</p>
+                                        <p class="speaker__company">SEMrush</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2903#2903" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25944/content_polosuhina.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Анна​​​​​​​​​​​​​ </br>
+                                            Полосухина​​​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург</p>
+                                        <p class="speaker__position">Brand Events Lead</p>
+                                        <p class="speaker__company">SEMrush</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2904#2904" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25945/content_dolgov.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Иван​​​​​​​​​​​​​​ </br>
+                                            Долгов​​​</p>
+                                        <p class="speaker__location">Россия. Санкт-Петербург</p>
+                                        <p class="speaker__position">Коммерческий директор</p>
+                                        <p class="speaker__company">JUG Ru Group</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2905#2905" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25947/content_bandarenka.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Hanna​​​​​​​​​​​​​​​ </br>
+                                            Bandarenka​​​</p>
+                                        <p class="speaker__location">Республика Беларусь. Минск</p>
+                                        <p class="speaker__position">People Programs Lead</p>
+                                        <p class="speaker__company">EPAM</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="speaker__item">
+                                <a href="https://hrapiconf.com/materials/2906#2906" class="speaker__link"
+                                    target=" _blank">
+                                    <div class="speaker__img">
+                                        <img src="https://hrapiconf.com/system/ckeditor/pictures/25949/content_popova.png"
+                                            class="speaker__avatar" alt="speaker avatar">
+                                    </div>
+                                    <div class="speaker__title">
+                                        <p class="speaker__name">Наталья​​​​​​​​​​​​​​​​ </br>
+                                            Попова​​​</p>
+                                        <p class="speaker__location">Россия. Екатеринбург</p>
+                                        <p class="speaker__position">Founder стартаппроекта</p>
+                                        <p class="speaker__company">HRAngel</p>
+                                    </div>
                                 </a>
                             </li>
                         </ul>
                     </div>
+                    <a href="https://hrapiconf.com/materials/" target=" _blank">
+                        <button class="button__presen button">Описания докладов</button>
+                    </a>
                 </div>
             </div>
-        </div>
-
-        <div class="contact section--bg--blue ">
+        </section>
+        <section class="for-member  section">
             <div class="container">
-                <div class="contacts-info" id="contacts">
-                    <div class="contact-section">
-                        <p class="section-title">Контакты</p>
-                        <div class="contacts">
-                            <ul class="contacts__list">
-                                <li class="contacts__item">
-                                    <p class="contact__desc">По вопросам билетов:</p>
-                                    <p class="contact__name">Мария Михеенко</p>
-                                    <a href="tel:+79117063073" class="contact__tel">+7 911 706-30-73</a>
-                                    <a href="mailto:maria@it-events.com" class="contact__email">maria@it-events.com</a>
+                <h2 class="section-title">Формат конференции</h2>
+                <ul class="format__list">
+                    <li class="format__item">
+                        <span class="material-icons  material-icons--big">
+                            date_range
+                        </span>
+                        <span class="format__title">
+                            24 - 26 сентября 2020 <br>
+                            чт. - сб. (3 дня)
+                        </span>
+                    </li>
+                    <li class="format__item">
+                        <span class="material-icons  material-icons--big material-icons.md-36">
+                            schedule
+                        </span>
+                        <span class="format__title">
+                            четверг и пятница с 10.00 до 14.00 <br>
+                            суббота с 11.00 до 15.00
+                        </span>
+                    </li>
+                    <li class="format__item">
+                        <span class="material-icons  material-icons--big">
+                            question_answer
+                        </span>
+                        <span class="format__title">
+                            3 - 4 потока докладов, <br>
+                            воркшопов, мастер-классов
+                        </span>
+                    </li>
+                    <li class="format__item">
+                        <span class="material-icons  material-icons--big">
+                            language
+                        </span>
+                        <span class="format__title">
+                            Русскоязычная конференция
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="before-section   section--red section">
+            <div class="container">
+                <h2 class="section-title before-section__title">Как это было раньше</h2>
+                <ul class="before__list">
+                    <li class="before__item">
+                        <a href="https://hrapiconf.com/HRAPI_2019/materials" class="before__item-link" target="_blank">
+                            <div class="before__img">
+                                <img src="https://it-events.com/system/ckeditor/pictures/25807/original_7dnhxkc7qxa.jpg"
+                                    alt="Фото с события" class="before__image">
+                            </div>
+                            <div class="before__title">HR API 2019</div>
+                        </a>
+                    </li>
+                    <li class="before__item">
+                        <a href="https://hrapiconf.com/HRAPI_2018/materials" class="before__item-link" target="_blank">
+                            <div class="before__img">
+                                <img src="https://it-events.com/system/ckeditor/pictures/25808/original_mlfxrm5_ato.jpg"
+                                    alt="Фото с события" class="before__image">
+                            </div>
+                            <div class="before__title">HR API 2018</div>
+                        </a>
+                    </li>
+                    <li class="before__item">
+                        <a href="https://hrapiconf.com/HRAPI_2017/materials" class="before__item-link" target="_blank">
+                            <div class="before__img">
+                                <img src="https://it-events.com/system/ckeditor/pictures/25809/original_mkteocgcplk.jpg"
+                                    alt="Фото с события" class="before__image">
+                            </div>
+                            <div class="before__title">HR API 2017</div>
+                        </a>
+                    </li>
+                    <li class="before__item">
+                        <a href="https://it-events.com/events/5905/materials" class="before__item-link" target="_blank">
+                            <div class="before__img">
+                                <img src="https://it-events.com/system/ckeditor/pictures/25812/original_-vjm-bt4cuu.jpg"
+                                    alt="Фото с события" class="before__image">
+                            </div>
+                            <div class="before__title">нАйТи ответ! #10</div>
+                        </a>
+                    </li>
+                    <li class="before__item">
+                        <a href="https://it-events.com/events/3120/materials" class="before__item-link" target="_blank">
+                            <div class="before__img">
+                                <img src="https://it-events.com/system/ckeditor/pictures/25810/original_-y0yusmnq4o.jpg"
+                                    alt="Фото с события" class="before__image">
+                            </div>
+                            <div class="before__title">нАйТи ответ! #9</div>
+                        </a>
+                    </li>
+                    <li class="before__item">
+                        <a href="https://it-events.com/events/1889/materials" class="before__item-link" target="_blank">
+                            <div class="before__img">
+                                <img src="https://it-events.com/system/ckeditor/pictures/25811/original_k5_ajyzulnu.jpg"
+                                    alt="Фото с события" class="before__image">
+                            </div>
+                            <div class="before__title">нАйТи Ответ! #8</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section pc-section">
+            <div class="container">
+                <h2 class="section-title pk-section__title">Программный комитет</h2>
+                <ul class="pk">
+
+                    <li class="pk__item">
+                        <div class="pk__img">
+                            <img src="https://hrapiconf.com/system/ckeditor/pictures/17954/content_bez_imeni-1.png"
+                                class="pk__avatar" alt="pk avatar">
+                        </div>
+                        <div class="pk__title">
+                            <p class="pk__name">Анастасия </br>
+                                Мазова</p>
+                            <p class="pk__city">Болгария. Бургас</p>
+                            <p class="pk__position">IT Recruiter</p>
+                            <p class="pk__company">Freelance</p>
+                        </div>
+                    </li>
+
+                    <li class="pk__item">
+                        <div class="pk__img">
+                            <img src="https://hrapiconf.com/system/ckeditor/pictures/16474/content_den.png"
+                                class="pk__avatar" alt="pk avatar">
+                        </div>
+                        <div class="pk__title">
+                            <p class="pk__name">Денис </br>
+                                Каланов</p>
+                            <p class="pk__city">Россия. Санкт-Петербург</p>
+                            <p class="pk__position"> CEO </p>
+                            <p class="pk__company">IT-Events</p>
+                        </div>
+                    </li>
+
+                    <li class="pk__item">
+                        <div class="pk__img">
+                            <img src="https://hrapiconf.com/system/ckeditor/pictures/24628/content_faina_lerner.png"
+                                class="pk__avatar" alt="pk avatar">
+                        </div>
+                        <div class="pk__title">
+                            <p class="pk__name">Фаина </br>
+                                Лернер</p>
+                            <p class="pk__city">Россия. Санкт-Петербург</p>
+                            <p class="pk__position">Director, Talent Acquisition and People Mgt</p>
+                            <p class="pk__company">EPAM</p>
+                        </div>
+                    </li>
+
+                    <li class="pk__item">
+                        <div class="pk__img">
+                            <img src="https://hrapiconf.com/system/ckeditor/pictures/16477/content_yakimenko.png"
+                                class="pk__avatar" alt="pk avatar">
+                        </div>
+                        <div class="pk__title">
+                            <p class="pk__name">Элеонора </br>
+                                Якименко</p>
+                            <p class="pk__city">Россия. Санкт-Петербург</p>
+                            <p class="pk__position">IT HR expert</p>
+                            <p class="pk__company"></p>
+                        </div>
+                    </li>
+
+                    <li class="pk__item">
+                        <div class="pk__img">
+                            <img src="https://hrapiconf.com/system/ckeditor/pictures/17901/content_baranova.png"
+                                class="pk__avatar" alt="pk avatar">
+                        </div>
+                        <div class="pk__title">
+                            <p class="pk__name">Анна </br>
+                                Баранова</p>
+                            <p class="pk__city">Россия. Екатеринбург</p>
+                            <p class="pk__position">Руководитель HRBP и подбора</p>
+                            <p class="pk__company">СКБ Контур</p>
+                        </div>
+                    </li>
+
+                    <li class="pk__item">
+                        <div class="pk__img">
+                            <img src="https://hrapiconf.com/system/ckeditor/pictures/17810/content_bez_imeni-1.png"
+                                class="pk__avatar" alt="pk avatar">
+                        </div>
+                        <div class="pk__title">
+                            <p class="pk__name">Василий </br>
+                                Комолов</p>
+                            <p class="pk__city">Россия. Нижний Новгород</p>
+                            <p class="pk__position">Recruitment Lead</p>
+                            <p class="pk__company">EPAM</p>
+                        </div>
+                    </li>
+
+                    <li class="pk__item">
+                        <div class="pk__img">
+                            <img src="https://hrapiconf.com/system/ckeditor/pictures/21871/content_bez_imeni-1.png"
+                                class="pk__avatar" alt="pk avatar">
+                        </div>
+                        <div class="pk__title">
+                            <p class="pk__name">Екатерина </br>
+                                Ячменева</p>
+                            <p class="pk__city">Латвия. Рига</p>
+                            <p class="pk__position">HR Директор</p>
+                            <p class="pk__company">FindaNode</p>
+                        </div>
+                    </li>
+
+                    <li class="pk__item">
+                        <div class="pk__img">
+                            <img src="https://hrapiconf.com/system/ckeditor/pictures/24571/content_bez_imeni-1.png"
+                                class="pk__avatar" alt="pk avatar">
+                        </div>
+                        <div class="pk__title">
+                            <p class="pk__name">Мария </br>
+                                Орлова</p>
+                            <p class="pk__city">Россия. Екатеринбург</p>
+                            <p class="pk__position">Руководитель HR-бренда</p>
+                            <p class="pk__company">СКБ Контур</p>
+                        </div>
+                    </li>
+
+                    <li class="pk__item">
+                        <div class="pk__img">
+                            <img src="https://hrapiconf.com/system/ckeditor/pictures/24603/content_tanya_pichyova.png"
+                                class="pk__avatar" alt="pk avatar">
+                        </div>
+                        <div class="pk__title">
+                            <p class="pk__name">Таня </br>
+                                Пичёва​</p>
+                            <p class="pk__city">Россия. Новосибирск</p>
+                            <p class="pk__position">Продуктовый редактор</p>
+                            <p class="pk__company">Зарплата.ру</p>
+                        </div>
+                    </li>
+
+                    <li class="pk__item">
+                        <div class="pk__img">
+                            <img src="https://it-events.com/system/event_photos/imgs/000/013/050/original/oooo.plus_187.png"
+                                class="pk__avatar" alt="pk avatar">
+                        </div>
+                        <div class="pk__title">
+                            <p class="pk__name"> Ирина </br>
+                                Сарибекова​</p>
+                            <p class="pk__city">Россия. Санкт-Петербург</p>
+                            <p class="pk__position">Event-менеджер</p>
+                            <p class="pk__company">IT-Events</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section price-section" id="price">
+            <div class="container">
+                <h2 class="section-title price-section__title">Стоимость</h2>
+                <div class="tickets">
+                    <a href="https://hrapiconf.com/registration#form" target="_blank" class="ticket">
+                        <div class="left"></div>
+                        <div class="content">
+
+                            <div class="ticket__head">
+                                <h1 class="ticket__title">HR API online individual</h1>
+                            </div>
+
+                            <div class="tickets__price">
+                                <span class="tickets__price-summ">20 000</span>
+                                <span class="tickets__price-cyrency">₽</span>
+                            </div>
+                            <ul class="ticket__list">
+                                <li class="condition__item">
+                                    <span class="material-icons material-icon--green">
+                                        done
+                                    </span>
+                                    <span class="condition__item-title">
+                                        1 подключение
+                                    </span>
                                 </li>
-                                <li class="contacts__item">
-                                    <p class="contact__desc">По вопросам выступлений:</p>
-                                    <p class="contact__name">Ирина Сарибекова</p>
-                                    <a href="tel:+79219034517" class="contact__tel">+7 921 903-45-17</a>
-                                    <a href="mailto:irina@it-events.com" class="contact__email">irina@it-events.com</a>
+                                <li class="condition__item">
+                                    <span class="material-icons material-icon--green">
+                                        done
+                                    </span>
+                                    <span class="condition__item-title">
+                                        Онлайн трансляция докладов на русском и английском языках
+                                    </span>
+                                </li>
+                                <li class="condition__item">
+                                    <span class="material-icons material-icon--green">
+                                        done
+                                    </span>
+                                    <span class="condition__item-title">
+                                        Закрытый доступ к видеоархиву
+                                        (предоставляется в течение 3-х дней)
+                                    </span>
+                                </li>
+                                <li class="condition__item">
+                                    <span class="material-icons material-icon--red">
+                                        clear
+                                    </span>
+                                    <span class="condition__item-title">
+                                        Запрещается совместный просмотр
+                                    </span>
                                 </li>
                             </ul>
-                            <div class="socials">
-                                <p class="socials__desc">#OSTconf в социальных сетях: </p>
-                                <ul class="socials__list">
-                                    <li class="socials__item social__item-tw">
-                                        <a class="socials__link" href="https://twitter.com/OSTconf"
-                                            target=" _blank"></a>
-                                    </li>
-                                    <li class="socials__item social__item-vk">
-                                        <a class="socials__link" href="https://vk.com/ostconf" target=" _blank"></a>
-                                    </li>
-                                    <li class="socials__item social__item-fb">
-                                        <a class="socials__link" href="https://www.facebook.com/OSTconf/"
-                                            target=" _blank"></a>
-                                    </li>
-                                    <li class="socials__item social__item-yb">
-                                        <a class="socials__link" href="https://www.youtube.com/OSTconf"
-                                            target=" _blank"></a>
-                                    </li>
-                                    <li class="socials__item social__item-tg">
-                                        <a class="socials__link" href="https://t.me/OSTconf_channel"
-                                            target=" _blank"></a>
-                                    </li>
-                                </ul>
-                                
-                            </div>
+                            <button class="button__buy ticket__button button">Купить видеозаписи</button>
+
                         </div>
-                    </div>
+                        <div class=" right  right--after"></div>
+                    </a>
+                    <a href="https://hrapiconf.com/registration#form" target="_blank" class="ticket">
+                        <div class="left"></div>
+                        <div class="content">
+
+                            <div class="ticket__head">
+                                <h1 class="ticket__title">HR API online corporate</h1>
+                            </div>
+
+                            <div class="tickets__price">
+                                <span class="tickets__price-summ">55 000</span>
+                                <span class="tickets__price-cyrency">₽</span>
+                            </div>
+                            <ul class="ticket__list">
+                                <li class="condition__item">
+                                    <span class="material-icons material-icon--green">
+                                        done
+                                    </span>
+                                    <span class="condition__item-title">
+                                        7 подключений <br>
+                                    </span>
+                                </li>
+                                <li class="condition__item">
+                                    <span class="material-icons material-icon--green">
+                                        done
+                                    </span>
+                                    <span class="condition__item-title">
+                                        Онлайн трансляция докладов на русском и английском языках
+                                    </span>
+                                </li>
+                                <li class="condition__item">
+                                    <span class="material-icons material-icon--green">
+                                        done
+                                    </span>
+                                    <span class="condition__item-title">
+                                        Закрытый доступ к видеоархиву
+                                        (предоставляется в течение 3-х дней)
+                                    </span>
+                                </li>
+                                <li class="condition__item">
+                                    <span class="material-icons material-icon--green">
+                                        done
+                                    </span>
+                                    <span class="condition__item-title">
+                                        Разрешается совместный просмотр в офисе компании (для сотрудников компании)
+                                    </span>
+                                </li>
+                            </ul>
+                            <button class="button__buy ticket__button button">Купить видеозаписи</button>
+
+                        </div>
+                        <div class=" right  right--after"></div>
+                    </a>
+                </div>
+            </div>
+    </div>
+    </section>
+    <section class="sponsors">
+        <div class="container">
+            <div class="parter-block">
+                <h2 class="section-title partners-section__title">ОРГАНИЗАТОРЫ</h2>
+                <div class="partners__container">
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <a href="http://www.it-events.com/" class="partners__link" title="It-event" target="_blank"
+                                target=" _blank">
+                                <img class="partners__img"
+                                    src="https://ostconf.com/system/companies/logos/000/000/427/original/it-events-logo-white-horizontal_(1).png"
+                                    alt="It-events logo">
+                            </a>
+                        </li>
+                        <li class="partners__item">
+                            <a href="http://www.it-dominanta.ru/" class="partners__link" title="it-dominanta"
+                                target="_blank" target=" _blank">
+                                <img class="partners__img"
+                                    src="https://ostconf.com/system/partners/logos/000/006/494/original/dom-03.png"
+                                    alt="it-dominanta logo">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="parter-block">
+                <h2 class="section-title partners-section__title">Серебряные спонсоры</h2>
+                <div class="partners__container">
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <a href="https://amazinghiring.ru/" class="partners__link" title="AmazingHiring"
+                                target="_blank" target=" _blank">
+                                <img class="partners__img"
+                                    src="https://it-events.com/system/event_photos/imgs/000/013/117/original/logo-01.png"
+                                    alt="AmazingHiring logo">
+                            </a>
+                        </li>
+                        <li class="partners__item">
+                            <a href="https://huntflow.ru/" class="partners__link" title="Huntflow" target="_blank"
+                                target=" _blank">
+                                <img class="partners__img"
+                                    src="https://it-events.com/system/ckeditor/pictures/25905/original_snimok_ekrana_2020-09-09_v_16_10_26.png"
+                                    alt="Huntflow logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="parter-block">
+                <h2 class="section-title partners-section__title">Бронзовый спонсор</h2>
+                <div class="partners__container">
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <a href="https://jugru.org/" class="partners__link" title="jug.ru" target="_blank"
+                                target=" _blank">
+                                <img class="partners__img"
+                                    src="https://it-events.com/system/ckeditor/pictures/25914/original_snimok_ekrana_2020-09-11_v_14_22_28.png"
+                                    alt="jug.ru logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="parter-block">
+                <h2 class="section-title partners-section__title">ГЕНЕРАЛЬНЫЙ ИНФОРМАЦИОННЫЙ ПАРТНËР</h2>
+                <div class="partners__container">
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <a href="https://www.topassistant.ru/" class="partners__link" title="jug.ru" target="_blank"
+                                target=" _blank">
+                                <img class="partners__img"
+                                    src="https://it-events.com/system/ckeditor/pictures/25948/original_snimok_ekrana_2020-09-21_v_11_06_46.png"
+                                    alt="TA logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="parter-block">
+                <h2 class="section-title partners-section__title">ИНФОРМАЦИОННЫЕ ПАРТНЁРЫ</h2>
+                <div class="partners__container">
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <a href="https://ithrmeetup.ru/" class="partners__link info-partners__link"
+                                title="ithrmeetup" target="_blank" target=" _blank">
+                                <img class="partners__img"
+                                    src="https://it-events.com/system/event_photos/imgs/000/013/116/original/it_hr_spb_logo_art.png"
+                                    alt="It-events logo">
+                            </a>
+                        </li>
+
+
+                        <li class="partners__item">
+                            <a href="https://index-hr.ru/" class="partners__link info-partners__link" title="index"
+                                target=" _blank">
+                                <img class="partners__img"
+                                    src="https://it-events.com/system/ckeditor/pictures/25915/original_snimok_ekrana_2020-09-11_v_15_27_10.png"
+                                    alt="index logo">
+                            </a>
+                        </li>
+
+                        <li class="partners__item">
+                            <a href="https://headz.io/employer" class="partners__link  info-partners__link"
+                                title="headz.ru" target=" _blank">
+                                <img class="partners__img"
+                                    src="https://it-events.com/system/ckeditor/pictures/25967/original_logo_eps.png"
+                                    alt="headz logo">
+                            </a>
+                        </li>
+
+                        <li class="partners__item">
+                            <a href="https://www.mann-ivanov-ferber.ru/" class="partners__link info-partners__link"
+                                target="_blank" title="Mann Ivanov Ferber" target=" _blank">
+                                <img class="partners__img"
+                                    src="https://it-events.com/system/partners/logos/000/008/011/original/mif_logo%D1%87_%281%29.png"
+                                    alt="MIF logo">
+                            </a>
+                        </li>
+
+                        <li class="partners__item">
+                            <a href="https://career.habr.com/" class="partners__link info-partners__link" title="habr"
+                                target=" _blank">
+                                <img class="partners__img"
+                                    src="https://it-events.com/system/ckeditor/pictures/25946/original_partner-logo-round1.png"
+                                    alt="habr logo">
+                            </a>
+                        </li>
+
+                        <li class="partners__item">
+                            <a href="https://russoft.org/" class="partners__link info-partners__link" title="index"
+                                target=" _blank">
+                                <img class="partners__img"
+                                    src="https://it-events.com/system/ckeditor/pictures/25930/original_russoft.gif"
+                                    alt="russoft logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="parter-block">
+                <h2 class="section-title partners-section__title">ПАРТНЁРЫ</h2>
+                <div class="partners__container">
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <a href="http://www.vodovoz-spb.ru/" class="partners__link info-partners__link" title="index"
+                                target=" _blank">
+                                <img class="partners__img"
+                                    src="https://it-events.com/system/ckeditor/pictures/25983/original_vodovoz.png"
+                                    alt="Vodovoz logo">
+                            </a>
+                        </li>
+
+                        <li class="partners__item">
+                            <a href="http://www.vodovoz-spb.ru/" class="partners__link info-partners__link" title="index"
+                                target=" _blank">
+                                <img class="partners__img"
+                                    src="https://it-challenge.ru/system/partners/logos/000/006/748/original/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2019-06-27_%D0%B2_12.10.57.png?1561626876)"
+                                    alt="IT Coffee logo">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="contacts-section  section" id="contacts">
+        <div class="container">
+            <h2 class="section-title contacts-section__title">контакты</h2>
+            <div class="contacts">
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <p class="contact__desc">По вопросам выступления</p>
+                        <p class="contact__name">Ирина Сарибекова</p>
+                        <a href="tel:+79219034517" class="contact__tel">+7 921 903-45-17</a>
+                        <a href="mailto:irina@it-events.com" class="contact__email">irina@it-events.com</a>
+                    </li>
+                    <li class="contacts__item">
+                        <p class="contact__desc">По вопросам участия</p>
+                        <p class="contact__name">Мария Михеенко</p>
+                        <a href="tel:+79117063073" class="contact__tel">+7 911 706-30-73</a>
+                        <a href="mailto:maria@it-events.com" class="contact__email">maria@it-events.com</a>
+                    </li>
+                    <li class="contacts__item">
+                        <div class="socials">
+                            <p class="socials__desc">#hrapi в социальных сетях: </p>
+                            <ul class="socials__list">
+                                <li class="socials__item social__item-tw">
+                                    <a class="socials__link" href="https://twitter.com/hrapiconf" target=" _blank"></a>
+                                </li>
+                                <li class="socials__item social__item-vk">
+                                    <a class="socials__link" href="https://vk.com/hrapiconf" target=" _blank"></a>
+                                </li>
+                                <li class="socials__item social__item-fb">
+                                    <a class="socials__link" href="https://www.facebook.com/HRAPIConf/"
+                                        target=" _blank"></a>
+                                </li>
+                                <li class="socials__item social__item-yb">
+                                    <a class="socials__link" href="https://www.youtube.com/hrapiconf"
+                                        target=" _blank"></a>
+                                </li>
+                                <li class="socials__item social__item-tg">
+                                    <a class="socials__link" href="https://t.me/hrapiconf" target=" _blank"></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- <script src="./js/slider.js"></script> -->
+    <!-- <script src="./js/condition.js"></script> -->
+
+
+    <!-- ниже добавлять ссылки на скрипты -->
+    <script src="https://it-events.com/system/attachments/files/000/001/874/original/slider.js"></script>
+    <script src="https://it-events.com/system/attachments/files/000/001/854/original/condition.js"></script>
+</body>

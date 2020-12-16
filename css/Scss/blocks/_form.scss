@@ -12,25 +12,27 @@
 }
 
 .subscribe-form-item__control {
-    min-height: 77px;
-    padding: 14px 34px;
-    border: 2px solid #000000;
+  min-height: 77px;
+  padding: 14px 34px;
+  border: 2px solid #000000;
 
-    &::placeholder {
-font-style: italic;
-    }
+  &::placeholder {
+    font-style: italic;
+  }
 }
 .subscribe-form-item__label {
-    margin-right: 80px;
+  margin: auto;
+  margin-right: 80px;
+  white-space: nowrap;
 }
 
 .subscribe-form-item--input-email {
-    margin-right: 40px;
+  margin-right: 40px;
+  display: flex;
 }
 
 .subscribe-form-item__btn {
-    
-    padding: 20px 90px;
-    font-size: 24px;
-    text-transform: uppercase;
+  padding: 20px 90px;
+  font-size: 24px;
+  text-transform: uppercase;
 }
