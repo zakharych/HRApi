@@ -15,6 +15,10 @@
     min-height: 77px;
     padding: 14px 34px;
     border: 2px solid #000000;
+
+    &::placeholder {
+font-style: italic;
+    }
 }
 .subscribe-form-item__label {
     margin-right: 80px;

@@ -23,10 +23,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    @include tablets {
+    // @include tablets {
 
-        justify-content: center;
-     }
+    //     justify-content: center;
+    //  }
 }
 
 .header-row {
@@ -94,13 +94,13 @@
         margin-bottom: 10px;
     }
 
-    @include tablets {
+    // @include tablets {
 
-        .button {
-            min-width: 142px;
-            margin-bottom: 10px;
-        }
-    }
+    //     .button {
+    //         min-width: 142px;
+    //         margin-bottom: 10px;
+    //     }
+    // }
 }
 
 .buttons__item {
@@ -134,10 +134,10 @@
     align-items: center;
     flex: 1;
 
-    @include tablets {
+    // @include tablets {
 
-       display: none;
-    }
+    //    display: none;
+    // }
 }
 
 .socials-head__list {

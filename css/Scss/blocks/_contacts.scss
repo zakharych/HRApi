@@ -19,10 +19,10 @@
     font-size: 18px;
     flex-wrap: wrap;
 
-    @include tablets {        
-    justify-content: center;
-    text-align: center;
-    }
+    // @include tablets {        
+    // justify-content: center;
+    // text-align: center;
+    // }
 }
 
 .contacts__item {

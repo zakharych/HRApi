@@ -8,9 +8,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-right: -39px;
-    @include tablets {
-      justify-content: center;
-    }
+    // @include tablets {
+    //   justify-content: center;
+    // }
   }
 
   &__items {
@@ -32,13 +32,13 @@
       flex: 1;
     }
 
-    @include tablets {
-      margin-right: 39px;
-      min-width: 80%;
-      &:last-child {
-        flex: 0;
-      }
-    }
+    // @include tablets {
+    //   margin-right: 39px;
+    //   min-width: 80%;
+    //   &:last-child {
+    //     flex: 0;
+    //   }
+    // }
   }
 
   &__text {
