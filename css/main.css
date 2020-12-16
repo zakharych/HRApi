@@ -391,7 +391,7 @@ body {
 
 .section {
   padding-top: 55px;
-  padding-bottom: 100px;
+  padding-bottom: 55px;
 }
 
 h1 {
@@ -689,13 +689,14 @@ font-face {
   border: 2px solid #000000;
   background-color: #f7e126;
   color: #000000;
-  font: normal 14px/1.42 'Open Sans', sans-serif;
+  font: normal 14px/1.42 "Open Sans", sans-serif;
   cursor: pointer;
   transition: 0.4s;
   white-space: nowrap;
+  text-align: center;
 }
 
-button:hover {
+.button:hover {
   background-color: #13152f;
   color: #ffffff;
 }
@@ -835,7 +836,7 @@ button:hover {
 .lang__button {
   display: flex;
   align-items: center;
-  color: #73caf3;
+  color: #02ADFF;
 }
 
 .socials-head {
@@ -895,8 +896,8 @@ button:hover {
 }
 
 .hero-section {
-  background: url(https://it-events.com/system/ckeditor/pictures/25785/original_pattern_hero.png) repeat, url(https://it-events.com/system/ckeditor/pictures/25790/original_bg.png) repeat, url(https://it-events.com/system/ckeditor/pictures/25786/original_hero.png) no-repeat;
-  background-size: auto, auto , cover;
+  background: url(./../img/hero__bg.png) no-repeat;
+  background-size: cover;
   color: white;
   background-color: #202123;
   margin-top: 68px;
@@ -931,19 +932,15 @@ button:hover {
   font-size: 35px;
 }
 
-.hero__buy {
-  align-self: center;
-}
-
 .hero__button {
   font-size: 24px;
-  padding: 22px;
-  margin: 40px;
+  padding: 20px;
+  margin-right: 40px;
   min-width: 360px;
-  min-height: 78px;
+  text-transform: uppercase;
 }
 
-.hero__button-yellow {
+.hero__button--yellow {
   background-color: #F7E126;
   color: #000000;
 }
@@ -952,8 +949,8 @@ button:hover {
   margin-right: 0;
 }
 
-.about {
-  margin-bottom: 23px;
+.about__container {
+  padding: 0 90px;
 }
 
 .about__list {
@@ -976,12 +973,12 @@ button:hover {
   padding: 5px;
   border: 1px solid #979797;
   background-color: #d8d8d8;
-  min-width: 21%;
+  min-width: 22%;
   height: 82px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 40px;
-  margin-right: 55px;
+  margin-right: 35px;
   flex: 0;
 }
 
@@ -1003,9 +1000,20 @@ button:hover {
   font-size: 24px;
 }
 
+.section-report {
+  margin: 0;
+  background-color: #104591;
+}
+
+.report {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 92px;
+}
+
 /* спикеры */
 .speaker-section {
-  background: url(https://it-events.com/system/ckeditor/pictures/25789/original_bg_pattern_02.png) repeat;
   background-color: #e73a47;
 }
 
@@ -1112,12 +1120,16 @@ button:hover {
 }
 
 /*    */
+.section-format {
+  padding: 55px 160px;
+}
+
 .format__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
-  margin-bottom: -79px;
+  margin-bottom: -59px;
 }
 
 .format__item {
@@ -1125,17 +1137,18 @@ button:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 79px;
-}
-
-.material-icons--big {
-  font-size: 50px;
-  color: #333;
+  margin-bottom: 59px;
 }
 
 .format__title {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 700;
+}
+
+.material-icons--big {
+  font-size: 140px;
+  color: #333;
+  margin-bottom: 16px;
 }
 
 .pc-section {
@@ -1188,6 +1201,10 @@ button:hover {
   object-fit: cover;
 }
 
+.price-section {
+  padding: 55px 108px;
+}
+
 .price-section__title {
   color: #000000;
 }
@@ -1215,21 +1232,21 @@ button:hover {
 }
 
 .price__table-col {
-  padding: 19px 0;
-  width: 20%;
+  padding: 12px 0;
+  width: 14%;
   color: #000000;
   font-weight: 500;
+  text-align: center;
 }
 
 .price__table-col:first-child {
   text-align: left;
-  padding-left: 10px;
   font-family: "Open Sans";
+  font-size: 16px;
   font-weight: 700;
 }
 
-.price__table-col:last-child {
-  color: #e20714;
+.price__table-col--active {
   font-weight: 700;
 }
 
@@ -1239,7 +1256,7 @@ button:hover {
 }
 
 .ticket {
-  font: 400 16px/1.42 'Open Sans', sans-serif;
+  font: 400 16px/1.42 "Open Sans", sans-serif;
   display: flex;
   margin-bottom: 4%;
   position: relative;
@@ -1282,11 +1299,11 @@ button:hover {
 }
 
 .left {
-  background-image: linear-gradient(white, white), linear-gradient(to right, #73caf3, rgba(115, 202, 243, 0));
+  background-image: linear-gradient(white, white), linear-gradient(to right, #02ADFF, rgba(115, 202, 243, 0));
 }
 
 .right {
-  background-image: linear-gradient(white, white), linear-gradient(to right, rgba(115, 202, 243, 0), #73caf3);
+  background-image: linear-gradient(white, white), linear-gradient(to right, rgba(115, 202, 243, 0), #02ADFF);
 }
 
 .right:before {
@@ -1299,7 +1316,7 @@ button:hover {
   position: absolute;
   top: calc(50% - 14px);
   right: -14px;
-  border: 1px solid #73caf3;
+  border: 1px solid #02ADFF;
 }
 
 .right:after {
@@ -1323,7 +1340,7 @@ button:hover {
   position: absolute;
   top: calc(50% - 14px);
   left: -14px;
-  border: 1px solid #73caf3;
+  border: 1px solid #02ADFF;
 }
 
 .left:after {
@@ -1421,7 +1438,7 @@ button:hover {
   height: 0;
   text-align: center;
   padding: 0 0.05556rem;
-  transition: height .3s;
+  transition: height 0.3s;
   top: 100%;
 }
 
@@ -1432,7 +1449,7 @@ button:hover {
 
 .condition__button::before {
   content: "arrow_downward";
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
 }
 
 .ticket__button {
@@ -1441,6 +1458,10 @@ button:hover {
   padding: 14px 41px;
   margin-bottom: 30px;
   margin: auto 0;
+}
+
+.ticket__button:hover {
+  background-color: #9C9C9C;
 }
 
 .material-icon {
@@ -1464,28 +1485,27 @@ button:hover {
 }
 
 .ticket:hover .left {
-  background-image: linear-gradient(#fcf5f9, #fcf5f9), linear-gradient(to right, #73caf3, #fcf5f9);
+  background-image: linear-gradient(#fcf5f9, #fcf5f9), linear-gradient(to right, #02ADFF, #fcf5f9);
 }
 
 .ticket:hover .right {
-  background-image: linear-gradient(#fcf5f9, #fcf5f9), linear-gradient(to right, #fcf5f9, #73caf3);
+  background-image: linear-gradient(#fcf5f9, #fcf5f9), linear-gradient(to right, #fcf5f9, #02ADFF);
 }
 
 .ticket:hover .button__buy {
-  background-color: #13152f;
+  background-color: #9C9C9C;
 }
 
 .list {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 50px;
-  margin-right: -56px;
+  margin-bottom: 43px;
 }
 
 .list__item {
   text-align: center;
   position: relative;
-  width: 19%;
+  width: 14.6%;
 }
 
 .test {
@@ -1508,8 +1528,8 @@ button:hover {
 }
 
 .date__post {
-  margin-bottom: 18px;
-  font-size: 21px;
+  margin-bottom: 22px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -1534,13 +1554,13 @@ button:hover {
 }
 
 .dot__active {
-  width: 1.8em;
-  height: 1.8em;
+  width: 2em;
+  height: 2em;
   background-color: yellow;
   border: 0.6em solid #e20714;
   z-index: 10;
   position: relative;
-  margin-top: -2px;
+  margin-top: -8px;
 }
 
 .dot__post-active {
@@ -1565,6 +1585,39 @@ button:hover {
   background-color: #e20714;
 }
 
+.form-section {
+  background-color: #104591;
+  color: #ffffff;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 163px;
+  font-size: 24px;
+}
+
+.subscribe-form-item__control {
+  min-height: 77px;
+  padding: 14px 34px;
+  border: 2px solid #000000;
+}
+
+.subscribe-form-item__label {
+  margin-right: 80px;
+}
+
+.subscribe-form-item--input-email {
+  margin-right: 40px;
+}
+
+.subscribe-form-item__btn {
+  padding: 20px 90px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
 .parter-block {
   margin-bottom: 118px;
 }
@@ -1574,7 +1627,7 @@ button:hover {
 }
 
 .partners-org {
-  border-top: solid 1px #73caf3;
+  border-top: solid 1px #02ADFF;
 }
 
 .partners__container {
@@ -1634,7 +1687,6 @@ button:hover {
 }
 
 .before-section {
-  background: url(https://it-events.com/system/ckeditor/pictures/25787/original_bg_pattern_04.png) repeat;
   background-color: #e73a47;
 }
 

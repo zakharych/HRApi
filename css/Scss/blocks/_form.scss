@@ -1,0 +1,32 @@
+.form-section {
+  background-color: #104591;
+  color: #ffffff;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 163px;
+  font-size: 24px;
+}
+
+.subscribe-form-item__control {
+    min-height: 77px;
+    padding: 14px 34px;
+    border: 2px solid #000000;
+}
+.subscribe-form-item__label {
+    margin-right: 80px;
+}
+
+.subscribe-form-item--input-email {
+    margin-right: 40px;
+}
+
+.subscribe-form-item__btn {
+    
+    padding: 20px 90px;
+    font-size: 24px;
+    text-transform: uppercase;
+}

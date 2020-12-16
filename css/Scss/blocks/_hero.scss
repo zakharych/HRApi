@@ -1,8 +1,9 @@
 .hero-section {
-    background: url(https://it-events.com/system/ckeditor/pictures/25785/original_pattern_hero.png) repeat,
-     url(https://it-events.com/system/ckeditor/pictures/25790/original_bg.png) repeat, 
-     url(https://it-events.com/system/ckeditor/pictures/25786/original_hero.png) no-repeat; 
-    background-size: auto, auto , cover;
+    background: 
+    // url(https://it-events.com/system/ckeditor/pictures/25785/original_pattern_hero.png) repeat,
+    //  url(https://it-events.com/system/ckeditor/pictures/25790/original_bg.png) repeat, 
+     url(./../img/hero__bg.png) no-repeat; 
+    background-size:  cover;
     color: white;
     background-color: #202123;
     margin-top: 68px;
@@ -37,18 +38,19 @@
     font-size: 35px;
 }
 
-.hero__buy {
-    align-self: center;
-}
+// .hero__buy {
+//     align-self: center;
+// }
 
 .hero__button {
     font-size: 24px;
-    padding: 22px;
-    margin: 40px;
+    padding: 20px;
+    margin-right: 40px;
     min-width: 360px;
-    min-height: 78px;
+    // min-height: 78px;
+    text-transform: uppercase;
     
-    &-yellow{
+    &--yellow{
         background-color: #F7E126;
         color: #000000;
     }

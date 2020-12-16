@@ -1,419 +1,393 @@
-// .price {
-//     padding: 0 120px;
-// }
+.price-section {
+  padding: 55px 108px;
+}
 .price-section__title {
-    color: #000000;
+  color: #000000;
 }
 
 .price__table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 140px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 140px;
 
-    text-transform: uppercase;
-    font-size: 21px;
-    font-weight: 700;
-    text-align: right;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: right;
 }
 
 .price__table-row {
-    border-top: solid 3px #114490;
+  border-top: solid 3px #114490;
 
-    &:last-child {
-        border-bottom: solid 3px #114490;
-    }
+  &:last-child {
+    border-bottom: solid 3px #114490;
+  }
 
-    &:hover {
-        background-color: #fcf5f9;
-    }
+  &:hover {
+    background-color: #fcf5f9;
+  }
 }
 
 .price__table-col {
-    padding: 19px 0;
-    width: 20%;
-    color: #000000;
-    font-weight: 500;
+  padding: 12px 0;
+  width: 14%;
+  color: #000000;
+  font-weight: 500;
 
-    &:first-child {
-        text-align: left;
-        padding-left: 10px;
-        font-family: "Open Sans";
-        font-weight: 700;
-    }
+  text-align: center;
 
-    &:last-child {
-        color: #e20714;
-        font-weight: 700;
-    }
+  &:first-child {
+    text-align: left;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &--active {
+    font-weight: 700;
+  }
 }
 
-
-
-
-
-
 .tickets {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .ticket {
+  font: 400 16px/1.42 "Open Sans", sans-serif;
+  display: flex;
+  margin-bottom: 4%;
+  position: relative;
+  width: 48%;
 
-    font: 400 16px/1.42 'Open Sans', sans-serif;
-    display: flex;
-    margin-bottom: 4%;
-    position: relative;
-    width: 48%;
+  &:nth-child(odd) {
+    margin-right: 4%;
+  }
 
-    &:nth-child(odd) {
+  &:last-child {
+    margin-right: 0px;
+  }
 
-        margin-right: 4%;
-    }
-
-    &:last-child {
-        margin-right: 0px;
-    }
-
-    &--less-height {
-        align-self: flex-start;
-    }
+  &--less-height {
+    align-self: flex-start;
+  }
 }
 
-
 .content {
-    padding: 15px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 87%;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 87%;
 
-    &--just-text {
-        width: 78%;
-    }
+  &--just-text {
+    width: 78%;
+  }
 }
 
 .left,
 .right {
-    flex: 1;
-    border: solid 1px transparent;
-    border-radius: 5px;
-    background-image: linear-gradient(white, white),
-        linear-gradient(to right, #cccccc00, #ccc);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
+  flex: 1;
+  border: solid 1px transparent;
+  border-radius: 5px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, #cccccc00, #ccc);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .left {
-    background-image: linear-gradient(white, white),
-        linear-gradient(to right, $tableprice, $tableprice_bg);
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, $tableprice, $tableprice_bg);
 }
 
 .right {
-    background-image: linear-gradient(white, white),
-        linear-gradient(to right, $tableprice_bg, $tableprice);
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, $tableprice_bg, $tableprice);
 }
 
-
-
 .right:before {
-    content: "";
-    display: block;
-    width: 22px;
-    height: 22px;
-    background: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: calc(50% - 14px);
-    right: -14px;
-    border: 1px solid $tableprice;
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 14px);
+  right: -14px;
+  border: 1px solid $tableprice;
 }
 
 .right:after {
-    content: "";
-    display: block;
-    width: 15px;
-    height: 98px;
-    background: #fff;
-    position: absolute;
-    top: calc(50% - 44px);
-    right: -15px;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 98px;
+  background: #fff;
+  position: absolute;
+  top: calc(50% - 44px);
+  right: -15px;
 }
 
-
 .left:before {
-    content: "";
-    display: block;
-    width: 22px;
-    height: 22px;
-    background: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: calc(50% - 14px);
-    left: -14px;
-    border: 1px solid $tableprice;
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 14px);
+  left: -14px;
+  border: 1px solid $tableprice;
 }
 
 .left:after {
-    content: "";
-    display: block;
-    width: 15px;
-    height: 98px;
-    background: #fff;
-    position: absolute;
-    top: calc(50% - 44px);
-    left: -15px;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 98px;
+  background: #fff;
+  position: absolute;
+  top: calc(50% - 44px);
+  left: -15px;
 }
 
-
-
-
 .ticket__title {
-    font-size: 36px;
-    text-transform: uppercase;
-    margin-bottom: 19px;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 19px;
 }
 
 .tickets__price {
-    font-size: 48px;
-    font-weight: 700;
-    font-family: Roboto;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 12px;
-    color: #ff0000;
-    line-height: 1;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: Roboto;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #ff0000;
+  line-height: 1;
 }
 
 .tickets__price-summ {
-    position: relative;
-    margin-bottom: 10px;
+  position: relative;
+  margin-bottom: 10px;
 }
 
 .tickets__price-cyrency {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .tickets__price-sale {
-    font-size: 21px;
-    font-weight: 500;
-    color: #6e6e6e;
-    position: relative;
-    margin-top: 7px;
+  font-size: 21px;
+  font-weight: 500;
+  color: #6e6e6e;
+  position: relative;
+  margin-top: 7px;
 
-    &--indropdown {
-        
+  &--indropdown {
     margin-top: 0px;
     padding-top: 7px;
-    }
+  }
 
-    &::after {
-        background-color: rgb(102, 102, 102);
-        content: " ";
-        width: 100px;
-        height: 1px;
-        position: absolute;
-        bottom: 9px;
-        left: calc(50% - 49px);
-        transform: rotate(-15deg);
-    }
+  &::after {
+    background-color: rgb(102, 102, 102);
+    content: " ";
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    bottom: 9px;
+    left: calc(50% - 49px);
+    transform: rotate(-15deg);
+  }
 }
 
 .tickets__price-condition {
-    color: #6e6e6e;
-    font-size: 21px;
-    margin-top: 13px;
-    font-weight: normal;
+  color: #6e6e6e;
+  font-size: 21px;
+  margin-top: 13px;
+  font-weight: normal;
 }
 
 .ticket__list {
-    margin-bottom: 65px;
-    width: 100%;
+  margin-bottom: 65px;
+  width: 100%;
 }
 
 .condition__item {
-    display: flex;
-    align-items: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .condition__item-title {
-    color: #000000;
-    font-size: 21px;
-    line-height: 1.4;
-    margin-left: 10px;
+  color: #000000;
+  font-size: 21px;
+  line-height: 1.4;
+  margin-left: 10px;
 }
 
-
 .condition__item-info {
-
-    color: #000000;
-    font-size: 21px;
-    line-height: 1.4;
-    overflow: hidden;
-    height: 0;
-    text-align: center;
-    padding: 0 0.05556rem;
-    transition: height .3s;
-    top: 100%;
-
+  color: #000000;
+  font-size: 21px;
+  line-height: 1.4;
+  overflow: hidden;
+  height: 0;
+  text-align: center;
+  padding: 0 0.05556rem;
+  transition: height 0.3s;
+  top: 100%;
 }
 
 .condition__button {
-    border: none;
-    background-color: transparent;
+  border: none;
+  background-color: transparent;
 
-    &::before {
-        content: "arrow_downward";
-        font-family: 'Material Icons';
-    }
+  &::before {
+    content: "arrow_downward";
+    font-family: "Material Icons";
+  }
 }
 
 .ticket__button {
-    align-self: center;
-    font-size: 24px;
-    padding: 14px 41px;
-    margin-bottom: 30px;
-    margin: auto 0;
-}
+  align-self: center;
+  font-size: 24px;
+  padding: 14px 41px;
+  margin-bottom: 30px;
+  margin: auto 0;
 
+  &:hover {
+      background-color: #9C9C9C;
+  }
+}
 
 .material-icon {
+  font-weight: bold;
+  font-size: 30px;
+  align-self: flex-start;
+  margin-right: 5px;
+  line-height: 1;
 
-    font-weight: bold;
-    font-size: 30px;
-    align-self: flex-start;
-    margin-right: 5px;
-    line-height: 1;
+  &--green {
+    color: #3aa935;
+  }
 
-    &--green{        
-        color: #3aa935;
-    }
-
-    &--red {
-        color: #e03626;
-    }
-    
-
-
+  &--red {
+    color: #e03626;
+  }
 }
-
 
 //  Рамка блока с билетами
 .ticket:hover .content {
-    background-color: $tableprice_bg-hover;
+  background-color: $tableprice_bg-hover;
 }
 
 .ticket:hover .left {
-    background-image: linear-gradient($tableprice_bg-hover, $tableprice_bg-hover),
-        linear-gradient(to right, $tableprice, $tableprice_bg-hover);
+  background-image: linear-gradient($tableprice_bg-hover, $tableprice_bg-hover),
+    linear-gradient(to right, $tableprice, $tableprice_bg-hover);
 }
 
 .ticket:hover .right {
-    background-image: linear-gradient($tableprice_bg-hover, $tableprice_bg-hover),
-        linear-gradient(to right, $tableprice_bg-hover, $tableprice);
+  background-image: linear-gradient($tableprice_bg-hover, $tableprice_bg-hover),
+    linear-gradient(to right, $tableprice_bg-hover, $tableprice);
 }
 
 .ticket:hover .button__buy {
-    background-color: rgba(19, 21, 47, 1);
+  background-color: #9C9C9C;
 }
-
-
-
 
 // слайднер даты
 
 .list {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 50px;
-    margin-right: -56px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 43px;
 }
 
 .list__item {
-    text-align: center;
-    position: relative;
-    width: 19%;
+  text-align: center;
+  position: relative;
+  width: 14.6%;
 }
 
 .test {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cost {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .cost__active {
-    background-color: $active-price;
-    color: white;
-    border-radius: 4px;
-    padding: 1px 3px;
-    margin-bottom: 3px;
-    font-weight: 600;
+  background-color: $active-price;
+  color: white;
+  border-radius: 4px;
+  padding: 1px 3px;
+  margin-bottom: 3px;
+  font-weight: 600;
 }
 
 .date__post {
-    margin-bottom: 18px;
+  margin-bottom: 22px;
 
+  font-size: 18px;
+  font-weight: 400;
+
+  &--active {
     font-size: 21px;
-    font-weight: 400;
-
-    &--active {
-
-        font-size: 21px;
-        font-weight: 700;
-    }
+    font-weight: 700;
+  }
 }
 
 .cost__post-active,
 .date__post-active {
-    color: #666;
-
+  color: #666;
 }
 
 .dot {
-    display: inline-block;
-    width: 1.55em;
-    height: 1.55em;
-    border-radius: 49%;
-    background-color: #5f5f60;
-    margin-left: 7px;
-    border: 0.5em solid #fff;
+  display: inline-block;
+  width: 1.55em;
+  height: 1.55em;
+  border-radius: 49%;
+  background-color: #5f5f60;
+  margin-left: 7px;
+  border: 0.5em solid #fff;
 }
 
 .dot__active {
-    width: 1.8em;
-    height: 1.8em;
-    background-color: yellow;
-    border: 0.6em solid #e20714;
-    z-index: 10;
-    position: relative;
-    margin-top: -2px;
+  width: 2em;
+  height: 2em;
+  background-color: yellow;
+  border: 0.6em solid #e20714;
+  z-index: 10;
+  position: relative;
+  margin-top: -8px;
 }
 
 .dot__post-active {
-    background-color: #e20714;
+  background-color: #e20714;
 }
 
-
 .line {
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    border: 0;
-    height: 0.188em;
-    border-radius: 0.063em;
-    background-color: #5f5f60;
-    top: 3.65em;
-    /* top: 0.63em; */
-    left: calc(-50% + 0.4em);
-    right: calc(50% + 0.4em);
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  border: 0;
+  height: 0.188em;
+  border-radius: 0.063em;
+  background-color: #5f5f60;
+  top: 3.65em;
+  /* top: 0.63em; */
+  left: calc(-50% + 0.4em);
+  right: calc(50% + 0.4em);
 }
 
 .line__active {
-    background-color: #e20714;
+  background-color: #e20714;
 }
