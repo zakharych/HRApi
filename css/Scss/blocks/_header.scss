@@ -11,8 +11,13 @@
     position: relative;
     background-color: $themecolor;
     color: white;
-    padding: 17px 10px 17px 218px;
+    padding: 17px 0px 17px 198px;
     flex-wrap: nowrap;
+
+    &__language {
+        color:#ffffff;
+        margin-left: 50px;
+    }
 }
 .header__menu {
     display: flex;
@@ -50,8 +55,8 @@
 .logo {
     position: absolute;
     top: 16px;
-    left: 20px;
-    width: 180px;
+    left: 0px;
+    width: 170px;
     height: 106px;
 
     &__link {

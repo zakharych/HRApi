@@ -384,7 +384,7 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1340px;
   width: 95%;
   margin: 0 auto;
 }
@@ -733,8 +733,13 @@ button:hover {
   position: relative;
   background-color: #104591;
   color: white;
-  padding: 17px 10px 17px 218px;
+  padding: 17px 0px 17px 198px;
   flex-wrap: nowrap;
+}
+
+.header__language {
+  color: #ffffff;
+  margin-left: 50px;
 }
 
 .header__menu {
@@ -771,8 +776,8 @@ button:hover {
 .logo {
   position: absolute;
   top: 16px;
-  left: 20px;
-  width: 180px;
+  left: 0px;
+  width: 170px;
   height: 106px;
 }
 
@@ -902,9 +907,14 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 65vh;
+  height: 74vh;
   max-height: 800px;
   min-height: 370px;
+}
+
+.hero__buttons {
+  display: flex;
+  justify-content: center;
 }
 
 .hero__desc {
@@ -926,8 +936,20 @@ button:hover {
 }
 
 .hero__button {
-  font-size: 36px;
-  padding: 12px 19px 12px;
+  font-size: 24px;
+  padding: 22px;
+  margin: 40px;
+  min-width: 360px;
+  min-height: 78px;
+}
+
+.hero__button-yellow {
+  background-color: #F7E126;
+  color: #000000;
+}
+
+.hero__button:last-child {
+  margin-right: 0;
 }
 
 .about {
@@ -954,12 +976,12 @@ button:hover {
   padding: 5px;
   border: 1px solid #979797;
   background-color: #d8d8d8;
-  min-width: 28%;
+  min-width: 21%;
   height: 82px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 40px;
-  margin-right: 5%;
+  margin-right: 55px;
   flex: 0;
 }
 
@@ -1753,4 +1775,3 @@ button:hover {
 .social_tag {
   font-size: 20px;
 }
-/*# sourceMappingURL=main.css.map */
