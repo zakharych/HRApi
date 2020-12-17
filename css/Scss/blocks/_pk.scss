@@ -36,7 +36,7 @@
 
 .pk__company {
     font-weight: 700;
-    color: #114490;
+    color: $pkAcent;
 }
 
 .pk__img {
@@ -45,9 +45,10 @@
     height: 170px;
     width: 170px;
     border: 4px solid #ff0000;
-    border: 4px solid #114490;
+    border: 4px solid $pkAcentBorder;
     border-radius: 50%;
     margin-bottom: 7px;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.4);
 }
 
 .pk__avatar {

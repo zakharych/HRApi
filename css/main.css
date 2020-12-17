@@ -1146,16 +1146,17 @@ font-face {
 
 .pk__company {
   font-weight: 700;
-  color: #114490;
+  color: #f7e126;
 }
 
 .pk__img {
   height: 170px;
   width: 170px;
   border: 4px solid #ff0000;
-  border: 4px solid #114490;
+  border: 4px solid #FF0000;
   border-radius: 50%;
   margin-bottom: 7px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
 }
 
 .pk__avatar {
@@ -1567,6 +1568,7 @@ font-face {
   min-height: 77px;
   padding: 14px 34px;
   border: 2px solid #000000;
+  line-height: normal;
 }
 
 .subscribe-form-item__control::placeholder {
@@ -1591,7 +1593,7 @@ font-face {
 }
 
 .section-partners {
-  background-color: #979797;
+  background-color: #E2E2E2;
   padding-bottom: 0;
 }
 
@@ -1717,32 +1719,73 @@ font-face {
 }
 
 .contacts-section {
-  background-color: #303b44;
+  background-color: #070b11;
   color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contacts-section__title {
+  margin-bottom: 54px;
 }
 
 .contacts-section a {
   color: #ffffff;
 }
 
+.contacts__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  padding-top: 54px;
+}
+
+.contacts__social .socials__item {
+  margin-right: 0;
+  background-color: #373735;
+}
+
+.contacts__social .socials__item:hover {
+  background-color: #37373550;
+}
+
+.contacts__logo {
+  display: block;
+  width: 181px;
+  height: 46px;
+  overflow: hidden;
+  margin-bottom: 22px;
+}
+
+.contacts__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .contacts__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 18px;
+  font-size: 24px;
   flex-wrap: wrap;
 }
 
 .contacts__item {
-  min-width: 30%;
   white-space: nowrap;
   margin-right: 10px;
-  margin-bottom: 30px;
+  position: relative;
+  align-self: flex-end;
 }
 
 .contact__desc {
   font-weight: 700;
   white-space: normal;
+}
+
+.contact__desc--font-normal {
+  font-weight: normal;
 }
 
 .contact__tel,
@@ -1761,15 +1804,25 @@ font-face {
   margin-bottom: 10px;
 }
 
+.socials__list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .socials__item {
-  display: inline-block;
-  width: 42px;
-  height: 42px;
+  display: block;
+  width: 60px;
+  height: 60px;
   background-image: url(https://ostconf.com/i/blocks/social/twitter.svg);
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: #ed4963;
   background-repeat: no-repeat;
   background-position: 50%;
-  border-radius: 5px;
+  margin-right: 13px;
+  background-size: 28px 28px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
 }
 
 .socials__item:hover {
@@ -1782,22 +1835,73 @@ font-face {
   display: block;
 }
 
-.social__item-vk {
+.socials__item-vk {
   background-image: url(https://ostconf.com/i/blocks/social/vk.svg);
 }
 
-.social__item-fb {
+.socials__item-fb {
   background-image: url(https://ostconf.com/i/blocks/social/facebook.svg);
 }
 
-.social__item-yb {
+.socials__item-yb {
   background-image: url(https://ostconf.com/i/blocks/social/youtube.svg);
 }
 
-.social__item-tg {
+.socials__item-tg {
   background-image: url(https://ostconf.com/i/blocks/social/telegram.svg);
 }
 
-.social_tag {
-  font-size: 20px;
+.socials__item-in {
+  background-image: url(https://it-events.com/system/event_photos/imgs/000/013/225/original/icon_Instagram.png);
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-menu-section {
+  background-color: #8e8e8e;
+  color: #ffffff;
+}
+
+.footer-menu__list {
+  display: flex;
+  white-space: nowrap;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  margin-right: 33px;
+  text-transform: uppercase;
+}
+
+.footer-menu__item {
+  padding: 24px 0;
+  margin-right: 10px;
+}
+
+.footer-menu__item:last-child {
+  margin-right: 0;
+}
+
+.footer-menu__item--active {
+  font-weight: 700;
+}
+
+.footer-menu__item--active a {
+  color: #000000;
+}
+
+.footer-menu__link {
+  color: #ffffff;
+  display: block;
+  transition: 0.2s;
+}
+
+.footer-menu__link:hover {
+  transform: scale(1.1);
+}
+
+.footer-menu__copy {
+  padding: 24px 0;
 }
