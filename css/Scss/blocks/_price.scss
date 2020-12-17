@@ -50,7 +50,8 @@
 
 .tickets {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
+  justify-content: center;
 }
 
 .ticket {
@@ -128,7 +129,7 @@
   background: #fff;
   position: absolute;
   top: calc(50% - 44px);
-  right: -15px;
+  right: -16px;
 }
 
 .left:before {
@@ -159,6 +160,7 @@
   font-size: 36px;
   text-transform: uppercase;
   margin-bottom: 19px;
+  text-align: center;
 }
 
 .tickets__price {
@@ -208,9 +210,10 @@
 
 .tickets__price-condition {
   color: #6e6e6e;
-  font-size: 21px;
+  font-size: 20px;
   margin-top: 13px;
   font-weight: normal;
+  white-space: nowrap;
 }
 
 .ticket__list {
@@ -259,6 +262,7 @@
   padding: 14px 41px;
   margin-bottom: 30px;
   margin: auto 0;
+  display: block;
 
   &:hover {
       background-color: #9C9C9C;

@@ -23,22 +23,32 @@
       margin-right: 0;
     }
 
-    &--active {
+    &--notactive {
       font-weight: 700;
       & a {
         color: #000000;
+        cursor: default;
+        pointer-events: none;
+        &:hover {
+          transform: none;
+        }
       }
     }
+
+    
   }
   &__link {
     color: #ffffff;
     display: block;
     transition: 0.2s;
+    font-size: 18px;
     &:hover {
       transform: scale(1.1);
     }
   }
   &__copy {
     padding: 24px 0;
+    align-self: flex-end;
+    color: black;
   }
 }

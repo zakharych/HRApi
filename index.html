@@ -1,49 +1,94 @@
 <!DOCTYPE html>
- <html lang="ru">       <head>
-        <!-- Google Tag Manager -->
-        <script>(function (w, d, s, l, i) {
-                w[l] = w[l] || []; w[l].push({
-                    'gtm.start':
-                        new Date().getTime(), event: 'gtm.js'
-                }); var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-KG46WLW');</script>
-        <!-- End Google Tag Manager -->
-        <!-- Yandex.Metrika counter -->
-        <script type="text/javascript">
-            (function (m, e, t, r, i, k, a) {
-                m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-                m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-            })
-                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-    
-            ym(49985668, "init", {
-                clickmap: true,
-                trackLinks: true,
-                accurateTrackBounce: true
-            });
-        </script>
-        <noscript>
-            <div><img src="https://mc.yandex.ru/watch/49985668" style="position:absolute; left:-9999px;" alt="" /></div>
-        </noscript>
-        <!-- /Yandex.Metrika counter -->
-        <meta name="google-site-verification" content="UJK5VuiahJ6xrpssPOoASorn26IDk672b4-qkknpsas" />
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=1500">
-    
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    
-        <link rel="stylesheet" href="./css/main.css">
-    
-        <!-- <link rel="stylesheet" href="https://it-events.com/system/attachments/files/000/001/920/original/main.css"> -->
-    
-        <title>HR API</title>
-    </head>
+<html lang="ru">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KG46WLW");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(49985668, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      });
+    </script>
+    <noscript>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/49985668"
+          style="position: absolute; left: -9999px"
+          alt=""
+        />
+      </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <meta
+      name="google-site-verification"
+      content="UJK5VuiahJ6xrpssPOoASorn26IDk672b4-qkknpsas"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1500" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- <link rel="stylesheet" href="https://it-events.com/system/attachments/files/000/001/920/original/main.css"> -->
+
+    <title>HR API</title>
+  </head>
 
   <body>
     <div class="wrapper">
@@ -74,7 +119,7 @@
                     <li class="buttons__item">
                       <a href="https://hrapiconf.com/registration#form">
                         <button class="button button__buy">
-                          Купить видео HR API 2020
+                          Подать доклад
                         </button>
                       </a>
                     </li>
@@ -86,6 +131,11 @@
                     <li class="buttons__item">
                       <a href="#price">
                         <button class="button">Стоимость</button>
+                      </a>
+                    </li>
+                    <li class="buttons__item">
+                      <a href="#contacts">
+                        <button class="button">Контакты</button>
                       </a>
                     </li>
                   </ul>
@@ -264,138 +314,199 @@
           <div class="speakers">
             <h2 class="section-title">Программный комитет</h2>
             <div class="speaker__slider">
-                <ul class="pk">
+              <ul class="pk">
+                <li class="pk__item">
+                  <div class="pk__img">
+                    <img
+                      src="https://hrapiconf.com/system/ckeditor/pictures/17954/content_bez_imeni-1.png"
+                      class="pk__avatar"
+                      alt="pk avatar"
+                    />
+                  </div>
+                  <div class="pk__title">
+                    <p class="pk__name">
+                      Анастасия <br />
+                      Мазова
+                    </p>
+                    <p class="pk__city">Болгария. Бургас</p>
+                    <p class="pk__position">IT Recruiter</p>
+                    <p class="pk__company">Freelance</p>
+                  </div>
+                </li>
 
-                    <li class="pk__item">
-                        <div class="pk__img">
-                            <img src="https://hrapiconf.com/system/ckeditor/pictures/17954/content_bez_imeni-1.png" class="pk__avatar" alt="pk avatar">
-                        </div>
-                        <div class="pk__title">
-                            <p class="pk__name">Анастасия <br>
-                                Мазова</p>
-                            <p class="pk__city">Болгария. Бургас</p>
-                            <p class="pk__position">IT Recruiter</p>
-                            <p class="pk__company">Freelance</p>
-                        </div>
-                    </li>
+                <li class="pk__item">
+                  <div class="pk__img">
+                    <img
+                      src="https://hrapiconf.com/system/ckeditor/pictures/16474/content_den.png"
+                      class="pk__avatar"
+                      alt="pk avatar"
+                    />
+                  </div>
+                  <div class="pk__title">
+                    <p class="pk__name">
+                      Денис <br />
+                      Каланов
+                    </p>
+                    <p class="pk__city">Россия. Санкт-Петербург</p>
+                    <p class="pk__position">CEO</p>
+                    <p class="pk__company">IT-Events</p>
+                  </div>
+                </li>
 
-                    <li class="pk__item">
-                        <div class="pk__img">
-                            <img src="https://hrapiconf.com/system/ckeditor/pictures/16474/content_den.png" class="pk__avatar" alt="pk avatar">
-                        </div>
-                        <div class="pk__title">
-                            <p class="pk__name">Денис <br>
-                                Каланов</p>
-                            <p class="pk__city">Россия. Санкт-Петербург</p>
-                            <p class="pk__position"> CEO </p>
-                            <p class="pk__company">IT-Events</p>
-                        </div>
-                    </li>
+                <li class="pk__item">
+                  <div class="pk__img">
+                    <img
+                      src="https://hrapiconf.com/system/ckeditor/pictures/24628/content_faina_lerner.png"
+                      class="pk__avatar"
+                      alt="pk avatar"
+                    />
+                  </div>
+                  <div class="pk__title">
+                    <p class="pk__name">
+                      Фаина <br />
+                      Лернер
+                    </p>
+                    <p class="pk__city">Россия. Санкт-Петербург</p>
+                    <p class="pk__position">
+                      Director, Talent Acquisition and People Mgt
+                    </p>
+                    <p class="pk__company">EPAM</p>
+                  </div>
+                </li>
 
-                    <li class="pk__item">
-                        <div class="pk__img">
-                            <img src="https://hrapiconf.com/system/ckeditor/pictures/24628/content_faina_lerner.png" class="pk__avatar" alt="pk avatar">
-                        </div>
-                        <div class="pk__title">
-                            <p class="pk__name">Фаина <br>
-                                Лернер</p>
-                            <p class="pk__city">Россия. Санкт-Петербург</p>
-                            <p class="pk__position">Director, Talent Acquisition and People Mgt</p>
-                            <p class="pk__company">EPAM</p>
-                        </div>
-                    </li>
+                <li class="pk__item">
+                  <div class="pk__img">
+                    <img
+                      src="https://hrapiconf.com/system/ckeditor/pictures/16477/content_yakimenko.png"
+                      class="pk__avatar"
+                      alt="pk avatar"
+                    />
+                  </div>
+                  <div class="pk__title">
+                    <p class="pk__name">
+                      Элеонора <br />
+                      Якименко
+                    </p>
+                    <p class="pk__city">Россия. Санкт-Петербург</p>
+                    <p class="pk__position">IT HR expert</p>
+                    <p class="pk__company"></p>
+                  </div>
+                </li>
 
-                    <li class="pk__item">
-                        <div class="pk__img">
-                            <img src="https://hrapiconf.com/system/ckeditor/pictures/16477/content_yakimenko.png" class="pk__avatar" alt="pk avatar">
-                        </div>
-                        <div class="pk__title">
-                            <p class="pk__name">Элеонора <br>
-                                Якименко</p>
-                            <p class="pk__city">Россия. Санкт-Петербург</p>
-                            <p class="pk__position">IT HR expert</p>
-                            <p class="pk__company"></p>
-                        </div>
-                    </li>
+                <li class="pk__item">
+                  <div class="pk__img">
+                    <img
+                      src="https://hrapiconf.com/system/ckeditor/pictures/17901/content_baranova.png"
+                      class="pk__avatar"
+                      alt="pk avatar"
+                    />
+                  </div>
+                  <div class="pk__title">
+                    <p class="pk__name">
+                      Анна <br />
+                      Баранова
+                    </p>
+                    <p class="pk__city">Россия. Екатеринбург</p>
+                    <p class="pk__position">Руководитель HRBP и подбора</p>
+                    <p class="pk__company">СКБ Контур</p>
+                  </div>
+                </li>
 
-                    <li class="pk__item">
-                        <div class="pk__img">
-                            <img src="https://hrapiconf.com/system/ckeditor/pictures/17901/content_baranova.png" class="pk__avatar" alt="pk avatar">
-                        </div>
-                        <div class="pk__title">
-                            <p class="pk__name">Анна <br>
-                                Баранова</p>
-                            <p class="pk__city">Россия. Екатеринбург</p>
-                            <p class="pk__position">Руководитель HRBP и подбора</p>
-                            <p class="pk__company">СКБ Контур</p>
-                        </div>
-                    </li>
+                <li class="pk__item">
+                  <div class="pk__img">
+                    <img
+                      src="https://hrapiconf.com/system/ckeditor/pictures/17810/content_bez_imeni-1.png"
+                      class="pk__avatar"
+                      alt="pk avatar"
+                    />
+                  </div>
+                  <div class="pk__title">
+                    <p class="pk__name">
+                      Василий <br />
+                      Комолов
+                    </p>
+                    <p class="pk__city">Россия. Нижний Новгород</p>
+                    <p class="pk__position">Recruitment Lead</p>
+                    <p class="pk__company">EPAM</p>
+                  </div>
+                </li>
 
-                    <li class="pk__item">
-                        <div class="pk__img">
-                            <img src="https://hrapiconf.com/system/ckeditor/pictures/17810/content_bez_imeni-1.png" class="pk__avatar" alt="pk avatar">
-                        </div>
-                        <div class="pk__title">
-                            <p class="pk__name">Василий <br>
-                                Комолов</p>
-                            <p class="pk__city">Россия. Нижний Новгород</p>
-                            <p class="pk__position">Recruitment Lead</p>
-                            <p class="pk__company">EPAM</p>
-                        </div>
-                    </li>
+                <li class="pk__item">
+                  <div class="pk__img">
+                    <img
+                      src="https://hrapiconf.com/system/ckeditor/pictures/21871/content_bez_imeni-1.png"
+                      class="pk__avatar"
+                      alt="pk avatar"
+                    />
+                  </div>
+                  <div class="pk__title">
+                    <p class="pk__name">
+                      Екатерина <br />
+                      Ячменева
+                    </p>
+                    <p class="pk__city">Латвия. Рига</p>
+                    <p class="pk__position">HR Директор</p>
+                    <p class="pk__company">FindaNode</p>
+                  </div>
+                </li>
 
-                    <li class="pk__item">
-                        <div class="pk__img">
-                            <img src="https://hrapiconf.com/system/ckeditor/pictures/21871/content_bez_imeni-1.png" class="pk__avatar" alt="pk avatar">
-                        </div>
-                        <div class="pk__title">
-                            <p class="pk__name">Екатерина <br>
-                                Ячменева</p>
-                            <p class="pk__city">Латвия. Рига</p>
-                            <p class="pk__position">HR Директор</p>
-                            <p class="pk__company">FindaNode</p>
-                        </div>
-                    </li>
+                <li class="pk__item">
+                  <div class="pk__img">
+                    <img
+                      src="https://hrapiconf.com/system/ckeditor/pictures/24571/content_bez_imeni-1.png"
+                      class="pk__avatar"
+                      alt="pk avatar"
+                    />
+                  </div>
+                  <div class="pk__title">
+                    <p class="pk__name">
+                      Мария <br />
+                      Орлова
+                    </p>
+                    <p class="pk__city">Россия. Екатеринбург</p>
+                    <p class="pk__position">Руководитель HR-бренда</p>
+                    <p class="pk__company">СКБ Контур</p>
+                  </div>
+                </li>
 
-                    <li class="pk__item">
-                        <div class="pk__img">
-                            <img src="https://hrapiconf.com/system/ckeditor/pictures/24571/content_bez_imeni-1.png" class="pk__avatar" alt="pk avatar">
-                        </div>
-                        <div class="pk__title">
-                            <p class="pk__name">Мария <br>
-                                Орлова</p>
-                            <p class="pk__city">Россия. Екатеринбург</p>
-                            <p class="pk__position">Руководитель HR-бренда</p>
-                            <p class="pk__company">СКБ Контур</p>
-                        </div>
-                    </li>
+                <li class="pk__item">
+                  <div class="pk__img">
+                    <img
+                      src="https://hrapiconf.com/system/ckeditor/pictures/24603/content_tanya_pichyova.png"
+                      class="pk__avatar"
+                      alt="pk avatar"
+                    />
+                  </div>
+                  <div class="pk__title">
+                    <p class="pk__name">
+                      Таня <br />
+                      Пичёва&#8203;
+                    </p>
+                    <p class="pk__city">Россия. Новосибирск</p>
+                    <p class="pk__position">Продуктовый редактор</p>
+                    <p class="pk__company">Зарплата.ру</p>
+                  </div>
+                </li>
 
-                    <li class="pk__item">
-                        <div class="pk__img">
-                            <img src="https://hrapiconf.com/system/ckeditor/pictures/24603/content_tanya_pichyova.png" class="pk__avatar" alt="pk avatar">
-                        </div>
-                        <div class="pk__title">
-                            <p class="pk__name">Таня <br>
-                                Пичёва&#8203;</p>
-                            <p class="pk__city">Россия. Новосибирск</p>
-                            <p class="pk__position">Продуктовый редактор</p>
-                            <p class="pk__company">Зарплата.ру</p>
-                        </div>
-                    </li>
-
-                    <li class="pk__item">
-                        <div class="pk__img">
-                            <img src="https://it-events.com/system/event_photos/imgs/000/013/050/original/oooo.plus_187.png" class="pk__avatar" alt="pk avatar">
-                        </div>
-                        <div class="pk__title">
-                            <p class="pk__name"> Ирина <br>
-                                Сарибекова&#8203;</p>
-                            <p class="pk__city">Россия. Санкт-Петербург</p>
-                            <p class="pk__position">Event-менеджер</p>
-                            <p class="pk__company">IT-Events</p>
-                        </div>
-                    </li>
-                </ul>
+                <li class="pk__item">
+                  <div class="pk__img">
+                    <img
+                      src="https://it-events.com/system/event_photos/imgs/000/013/050/original/oooo.plus_187.png"
+                      class="pk__avatar"
+                      alt="pk avatar"
+                    />
+                  </div>
+                  <div class="pk__title">
+                    <p class="pk__name">
+                      Ирина <br />
+                      Сарибекова&#8203;
+                    </p>
+                    <p class="pk__city">Россия. Санкт-Петербург</p>
+                    <p class="pk__position">Event-менеджер</p>
+                    <p class="pk__company">IT-Events</p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -506,11 +617,7 @@
             </table>
 
             <div class="tickets">
-              <a
-                href="https://hrapiconf.com/registration#form"
-                target="_blank"
-                class="ticket"
-              >
+              <div class="ticket">
                 <div class="left"></div>
                 <div class="content">
                   <div class="ticket__head">
@@ -520,6 +627,10 @@
                   <div class="tickets__price">
                     <span class="tickets__price-summ">8 000</span>
                     <span class="tickets__price-cyrency">₽</span>
+                    <div class="tickets__price-sale">10.000 ₽</div>
+                    <p class="tickets__price-condition">
+                      Предложение дествительно до 31 декабря 2020
+                    </p>
                   </div>
                   <ul class="ticket__list">
                     <li class="condition__item">
@@ -554,17 +665,16 @@
                       </span>
                     </li>
                   </ul>
-                  <button class="button button__buy ticket__button">
+                  <a
+                    href="https://hrapiconf.com/registration#form"
+                    class="button button__buy ticket__button"
+                  >
                     Купить билет
-                  </button>
+                  </a>
                 </div>
                 <div class="right right--after"></div>
-              </a>
-              <a
-                href="https://it-events.com/events/19978/registration#form"
-                target="_blank"
-                class="ticket"
-              >
+              </div>
+              <div class="ticket">
                 <div class="left"></div>
                 <div class="content">
                   <div class="ticket__head">
@@ -574,6 +684,10 @@
                   <div class="tickets__price">
                     <span class="tickets__price-summ">40 000</span>
                     <span class="tickets__price-cyrency">₽</span>
+                    <div class="tickets__price-sale">90.000 ₽</div>
+                    <p class="tickets__price-condition">
+                      Предложение дествительно до 31 декабря 2020
+                    </p>
                   </div>
                   <ul class="ticket__list">
                     <li class="condition__item">
@@ -611,19 +725,16 @@
                       </span>
                     </li>
                   </ul>
-                  <button class="button button__buy ticket__button">
+                  <a
+                    href="https://hrapiconf.com/registration#form"
+                    class="button button__buy ticket__button"
+                  >
                     Купить билет
-                  </button>
+                  </a>
                 </div>
                 <div class="right right--after"></div>
-              </a>
-            </div>
-            <div class="tickets">
-              <a
-                href="https://hrapiconf.com/registration#form"
-                target="_blank"
-                class="ticket"
-              >
+              </div>
+              <div class="ticket">
                 <div class="left"></div>
                 <div class="content">
                   <div class="ticket__head">
@@ -633,6 +744,10 @@
                   <div class="tickets__price">
                     <span class="tickets__price-summ">20 000</span>
                     <span class="tickets__price-cyrency">₽</span>
+                    <div class="tickets__price-sale">30.000 ₽</div>
+                    <p class="tickets__price-condition">
+                      Предложение дествительно до 31 декабря 2020
+                    </p>
                   </div>
                   <ul class="ticket__list">
                     <li class="condition__item">
@@ -685,17 +800,16 @@
                       </span>
                     </li>
                   </ul>
-                  <button class="button button__buy ticket__button">
+                  <a
+                    href="https://hrapiconf.com/registration#form"
+                    class="button button__buy ticket__button"
+                  >
                     Купить билет
-                  </button>
+                  </a>
                 </div>
                 <div class="right right--after"></div>
-              </a>
-              <a
-                href="https://it-events.com/events/19978/registration#form"
-                target="_blank"
-                class="ticket"
-              >
+              </div>
+              <div class="ticket">
                 <div class="left"></div>
                 <div class="content">
                   <div class="ticket__head">
@@ -751,12 +865,15 @@
                       </span>
                     </li>
                   </ul>
-                  <button class="button button__buy ticket__button">
+                  <a
+                    href="https://hrapiconf.com/registration#form"
+                    class="button button__buy ticket__button"
+                  >
                     Купить билет
-                  </button>
+                  </a>
                 </div>
                 <div class="right right--after"></div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
@@ -919,30 +1036,30 @@
       </section>
       <section class="section section-partners">
         <div class="container">
-            <div class="parter-block">
-              <h2 class="section-title partners-section__title">
-                ГЕНЕРАЛЬНЫЙ ПАРТНЁР
-              </h2>
-              <div class="partners__container">
-                <ul class="partners__list">
-                  <li class="partners__item">
-                    <a
-                      href="http://www.it-dominanta.ru/"
-                      class="partners__link"
-                      title="it-dominanta"
-                      target="_blank"
-                      target=" _blank"
-                    >
-                      <img
-                        class="partners__img"
-                        src="./img/it-dominanta.png"
-                        alt="it-dominanta logo"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </div>
+          <div class="parter-block">
+            <h2 class="section-title partners-section__title">
+              ГЕНЕРАЛЬНЫЙ ПАРТНЁР
+            </h2>
+            <div class="partners__container">
+              <ul class="partners__list">
+                <li class="partners__item">
+                  <a
+                    href="http://www.it-dominanta.ru/"
+                    class="partners__link"
+                    title="it-dominanta"
+                    target="_blank"
+                    target=" _blank"
+                  >
+                    <img
+                      class="partners__img"
+                      src="./img/it-dominanta.png"
+                      alt="it-dominanta logo"
+                    />
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
       </section>
       <section class="contacts-section section" id="contacts">
@@ -950,17 +1067,23 @@
           <h2 class="section-title contacts-section__title">ОРГАНИЗАТОРЫ</h2>
           <div class="contacts">
             <ul class="contacts__list">
-                <li class="contacts__item">
-                    <div class="contacts__logo">
-                        <img src="./img/it-events__logo.png" alt="" class="contacts__img">
-                    </div>
-                  <p class="contact__desc contact__desc--font-normal">IT-Events, LTD</p>
-                  <p class="contact__name">197342, Россия, Санкт-Петербург</p>
-                  <p class="contact__name">Торжковская улица, д.5, офис 37.</p>
-                  <a href="mailto:team@it-events.com" class="contact__email"
-                    >team@it-events.com</a
-                  >
-                </li>
+              <li class="contacts__item">
+                <div class="contacts__logo">
+                  <img
+                    src="./img/it-events__logo.png"
+                    alt=""
+                    class="contacts__img"
+                  />
+                </div>
+                <p class="contact__desc contact__desc--font-normal">
+                  IT-Events, LTD
+                </p>
+                <p class="contact__name">197342, Россия, Санкт-Петербург</p>
+                <p class="contact__name">Торжковская улица, д.5, офис 37.</p>
+                <a href="mailto:team@it-events.com" class="contact__email"
+                  >team@it-events.com</a
+                >
+              </li>
               <li class="contacts__item">
                 <p class="contact__desc">CEO</p>
                 <p class="contact__name">Каланов Денис</p>
@@ -983,10 +1106,18 @@
               </li>
               <ul class="contacts__social">
                 <li class="socials__item socials__item-in">
-                  <a class="socials__link" href="https://www.instagram.com/itevents_team/" target="_blank"></a>
+                  <a
+                    class="socials__link"
+                    href="https://www.instagram.com/itevents_team/"
+                    target="_blank"
+                  ></a>
                 </li>
                 <li class="socials__item socials__item-yb">
-                  <a class="socials__link" href="https://www.youtube.com/itevents" target="_blank"></a>
+                  <a
+                    class="socials__link"
+                    href="https://www.youtube.com/itevents"
+                    target="_blank"
+                  ></a>
                 </li>
               </ul>
             </ul>
@@ -997,15 +1128,15 @@
         <div class="container">
           <div class="footer-menu">
             <ul class="footer-menu__list">
-                <li class="footer-menu__item">
-                  <a
-                    href="https://it-events.com/company"
-                    class="footer-menu__link"
-                    target="_blank"
-                    >О Нас</a
-                  >
-                </li>
-              <li class="footer-menu__item footer-menu__item--active">
+              <li class="footer-menu__item">
+                <a
+                  href="https://it-events.com/company"
+                  class="footer-menu__link"
+                  target="_blank"
+                  >О Нас</a
+                >
+              </li>
+              <li class="footer-menu__item footer-menu__item--notactive">
                 <a
                   href="https://hrapiconf.com/"
                   class="footer-menu__link"
@@ -1051,7 +1182,7 @@
                   href="https://it-challenge.ru/"
                   class="footer-menu__link"
                   target="_blank"
-                  >IT-CHELLENGE</a
+                  >IT-CHАLLENGE</a
                 >
               </li>
               <li class="footer-menu__item">

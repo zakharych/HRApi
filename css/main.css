@@ -962,7 +962,7 @@ font-face {
 }
 
 .about__text {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .section-report {
@@ -1106,7 +1106,7 @@ font-face {
 }
 
 .format__title {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -1219,6 +1219,7 @@ font-face {
 .tickets {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .ticket {
@@ -1293,7 +1294,7 @@ font-face {
   background: #fff;
   position: absolute;
   top: calc(50% - 44px);
-  right: -15px;
+  right: -16px;
 }
 
 .left:before {
@@ -1324,6 +1325,7 @@ font-face {
   font-size: 36px;
   text-transform: uppercase;
   margin-bottom: 19px;
+  text-align: center;
 }
 
 .tickets__price {
@@ -1373,9 +1375,10 @@ font-face {
 
 .tickets__price-condition {
   color: #6e6e6e;
-  font-size: 21px;
+  font-size: 20px;
   margin-top: 13px;
   font-weight: normal;
+  white-space: nowrap;
 }
 
 .ticket__list {
@@ -1423,7 +1426,7 @@ font-face {
   font-size: 24px;
   padding: 14px 41px;
   margin-bottom: 30px;
-  margin: auto 0;
+  display: block;
 }
 
 .ticket__button:hover {
@@ -1673,6 +1676,10 @@ font-face {
   background-color: #e73a47;
 }
 
+.before-section__title {
+  color: #ffffff;
+}
+
 /* before  */
 .before__list {
   display: flex;
@@ -1884,18 +1891,25 @@ font-face {
   margin-right: 0;
 }
 
-.footer-menu__item--active {
+.footer-menu__item--notactive {
   font-weight: 700;
 }
 
-.footer-menu__item--active a {
+.footer-menu__item--notactive a {
   color: #000000;
+  cursor: default;
+  pointer-events: none;
+}
+
+.footer-menu__item--notactive a:hover {
+  transform: none;
 }
 
 .footer-menu__link {
   color: #ffffff;
   display: block;
   transition: 0.2s;
+  font-size: 18px;
 }
 
 .footer-menu__link:hover {
@@ -1904,4 +1918,6 @@ font-face {
 
 .footer-menu__copy {
   padding: 24px 0;
+  align-self: flex-end;
+  color: black;
 }
