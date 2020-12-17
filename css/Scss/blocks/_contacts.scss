@@ -46,7 +46,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 24px;
+  font-size: 18px;
   flex-wrap: wrap;
 
   // @include tablets {
@@ -107,14 +107,14 @@
 
   &__item {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background-image: url(https://ostconf.com/i/blocks/social/twitter.svg);
     background-color: #ed4963;
     background-repeat: no-repeat;
     background-position: 50%;
     margin-right: 13px;
-    background-size: 28px 28px;
+    background-size: 20px 20px;
   }
 
   &__item:last-child {
