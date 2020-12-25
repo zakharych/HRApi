@@ -390,8 +390,7 @@ body {
 }
 
 .section {
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding: 55px 10px;
 }
 
 h1 {
@@ -676,6 +675,11 @@ font-face {
   text-transform: uppercase;
 }
 
+.section-subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .section--red {
   background-color: #e73a47;
 }
@@ -728,6 +732,7 @@ font-face {
   background-color: #104591;
   box-shadow: 0 0 5px #0b162d;
   z-index: 20;
+  padding: 0 10px;
 }
 
 .header {
@@ -881,7 +886,7 @@ font-face {
   background-size: cover;
   color: white;
   background-color: #202123;
-  margin-top: 68px;
+  margin-top: 64px;
   padding: 0;
 }
 
@@ -1769,7 +1774,7 @@ font-face {
 .contacts__img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .contacts__list {
@@ -1865,6 +1870,32 @@ font-face {
   background-image: url(https://it-events.com/system/event_photos/imgs/000/013/225/original/icon_Instagram.png);
 }
 
+.place {
+  background-color: #e73a47;
+  color: #ffffff;
+}
+
+.place__galery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -48px;
+}
+
+.place__galery-item {
+  width: 362px;
+  height: 250px;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-bottom: 48px;
+  border: 3px solid #fde300;
+}
+
+.place__galery-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .footer-menu {
   display: flex;
   justify-content: space-between;
@@ -1912,7 +1943,6 @@ font-face {
   color: #ffffff;
   display: block;
   transition: 0.2s;
-  font-size: 18px;
 }
 
 .footer-menu__link:hover {
@@ -1923,4 +1953,5 @@ font-face {
   padding: 24px 0;
   align-self: flex-end;
   color: black;
+  white-space: nowrap;
 }
