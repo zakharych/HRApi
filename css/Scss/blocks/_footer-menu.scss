@@ -3,6 +3,7 @@
   &-section {
     background-color: #8e8e8e;
     color: #ffffff;
+    padding: 0;
   }
 
   display: flex;
@@ -13,7 +14,7 @@
     display: flex;
     flex: 1;
     justify-content: space-between;
-    margin-right: 33px;
+    margin-right: 23px;
     text-transform: uppercase;
   }
   &__item {
@@ -43,7 +44,7 @@
     transition: 0.2s;
     // font-size: 18px;
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
   &__copy {

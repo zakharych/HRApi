@@ -1,10 +1,12 @@
 .place {
-    background-color: #e73a47;
-    color: #ffffff;
+  background-color: #fde300;
+  color: #000000;
   &__galery-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -48px;
+    &:last-child {
+      margin-bottom: -48px;
+    }
   }
   &__galery-item {
     width: 362px;
@@ -12,7 +14,7 @@
     overflow: hidden;
     margin-right: 10px;
     margin-bottom: 48px;
-    border: 3px solid #fde300;
+    border: 3px solid #e73a47;
   }
   &__galery-img {
     height: 100%;

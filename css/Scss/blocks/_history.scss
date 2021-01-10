@@ -1,0 +1,66 @@
+.history {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #0b3066;
+  box-shadow: 0 0 5px #0b162d;
+  z-index: 20;
+  padding: 0;
+
+  &__list {
+    display: flex;
+    color: #ffffff60;
+    & .slick-list {
+      width: 90%;
+      margin: 0 auto;
+    }
+    & .slick-prev,
+    .slick-next {
+      height: 20px;
+      width: 20px;
+      transform: translateY(-8px);
+    }
+    & > .slick-prev::before,
+    > .slick-next::before {
+      content: url(https://hrapiconf.com/i/blocks/tabflow/arrow-left-new.svg);
+      display: block;
+      width: 20px;
+      height: 20px;
+    }
+    & .slick-next::before {
+      content: url(https://hrapiconf.com/i/blocks/tabflow/arrow-right-new.svg);
+    }
+    & > .slick-disabled {
+      opacity: 0;
+      cursor: unset;
+    }
+    & .slick-track {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 1120px !important;
+    }
+    & .slick-prev {
+      left: 10px;
+    }
+    & .slick-next {
+      right: 10px;
+    }
+  }
+  &__item {
+    :hover {
+      color: #ffffff;
+    }
+    white-space: nowrap;
+    width: 100%;
+    margin: 14px 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.slick-slide {
+      width: auto !important;
+    }
+  }
+  &__link {
+    color: inherit;
+  }
+}

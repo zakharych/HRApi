@@ -1,11 +1,12 @@
 
 .main-header {
-    position: fixed;
+    position: sticky;
     width: 100%;
     background-color: $themecolor;
     box-shadow: 0 0 5px #0b162d;
     z-index: 20;
-    padding: 0 10px;
+    padding: 0;
+    top:50px;
 }
 
 .header {

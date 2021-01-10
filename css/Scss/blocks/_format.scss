@@ -1,7 +1,8 @@
 /*    */
 
 .section-format {
-  padding: 55px 160px;
+  // padding: 55px 160px;
+  padding: 55px 0;
 }
 
 .format {
@@ -22,6 +23,19 @@
   &__title {
     font-size: 20px;
     font-weight: 700;
+  }
+  &__icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+    align-self: center;
+    overflow: hidden;
+    // margin-bottom: 16px;
+    &-pic {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
   }
 }
 
