@@ -62,5 +62,10 @@
   }
   &__link {
     color: inherit;
+    &--active {
+      color: #ffffff;
+      pointer-events: none;
+      cursor: unset;
+    }
   }
 }

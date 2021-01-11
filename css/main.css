@@ -935,7 +935,7 @@ font-face {
 
 .section-subtitle {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 21px;
 }
 
@@ -1217,6 +1217,12 @@ font-face {
 
 .history__link {
   color: inherit;
+}
+
+.history__link--active {
+  color: #ffffff;
+  pointer-events: none;
+  cursor: unset;
 }
 
 .hero-section {
@@ -2120,9 +2126,14 @@ font-face {
   color: #000000;
 }
 
+.place-section-title {
+  margin-bottom: 44px;
+}
+
 .place__galery-list {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: -22px;
 }
 
 .place__galery-list:last-child {
