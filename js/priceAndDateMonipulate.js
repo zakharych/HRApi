@@ -3,7 +3,7 @@ const dataNow = new Date();
 const curentMount = dataNow.getMonth();
 const curentYear = dataNow.getFullYear();
 
-const copyData = document.querySelector('.footer-menu__copy--data');
+const copyData = document.querySelector(".footer-menu__copy--data");
 copyData.innerText = curentYear;
 
 const tableString = document.querySelectorAll(".price__table-row");
@@ -20,4 +20,14 @@ for (let i = 0; i < dateElem.length; i++) {
       tableString[j].children[i + 1].classList.add("price__table-col--active");
     }
   }
+}
+
+const ticketPrice = document.querySelectorAll(".tickets__price-summ");
+const tablePrice = document.querySelectorAll(".price__table-col--active");
+
+for (let i = 0; i < ticketPrice.length - 1; i++) {
+  ticketPrice[i].innerText = tablePrice[i].innerText.slice(
+    0,
+    tablePrice[i].innerText.length - 2
+  );
 }
