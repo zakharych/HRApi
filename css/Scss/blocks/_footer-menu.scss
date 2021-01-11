@@ -35,8 +35,6 @@
         }
       }
     }
-
-    
   }
   &__link {
     color: #ffffff;
@@ -52,5 +50,9 @@
     align-self: flex-end;
     color: black;
     white-space: nowrap;
+
+    &--data {
+      display: inline-block;
+    }
   }
 }

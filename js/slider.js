@@ -2,7 +2,6 @@
 
 $(document).ready(function(){
   const history__list = document.querySelector('.history__list')
-  console.log(history__list.children.length);
 
   $('.history__list').slick({
     infinite: false,
