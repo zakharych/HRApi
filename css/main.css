@@ -2029,6 +2029,11 @@ font-face {
   color: #ffffff;
 }
 
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
 .contacts__social {
   display: flex;
   flex-direction: column;
@@ -2062,7 +2067,7 @@ font-face {
 
 .contacts__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   font-size: 21px;
   flex-wrap: wrap;
@@ -2070,9 +2075,14 @@ font-face {
 
 .contacts__item {
   white-space: nowrap;
-  margin-right: 10px;
+  margin-right: 62px;
   position: relative;
   align-self: flex-end;
+}
+
+.contacts__item:last-child {
+  margin-right: 0;
+  justify-self: flex-end;
 }
 
 .contact__desc {
@@ -2107,14 +2117,14 @@ font-face {
 
 .socials__item {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   background-image: url(https://ostconf.com/i/blocks/social/twitter.svg);
   background-color: #ed4963;
   background-repeat: no-repeat;
   background-position: 50%;
   margin-right: 13px;
-  background-size: 20px 20px;
+  background-size: 30px 30px;
   margin-bottom: 20px;
 }
 
