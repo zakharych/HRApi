@@ -642,13 +642,13 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1140px;
+  width: 1160px;
   padding: 0 5px;
 }
 
 .section {
   padding: 55px 10px;
-  min-width: 1140px;
+  min-width: 1160px;
 }
 
 h1 {
@@ -1091,23 +1091,20 @@ font-face {
   color: #02ADFF;
 }
 
-.socials-head {
+.socials-srting-block {
   display: flex;
-  width: 100%;
-  justify-content: flex-end;
+  align-items: center;
+}
+
+.socials-srting-block__list {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   flex: 1;
 }
 
-.socials-head__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.socials-srting-block__item {
   margin-right: 10px;
-}
-
-.socials-head__item {
-  margin-right: 5px;
   width: 30px;
   height: 30px;
   background-image: url(https://ostconf.com/i/blocks/social/twitter.svg);
@@ -1115,7 +1112,7 @@ font-face {
   background-position: 50%;
 }
 
-.socials-head__item:last-child {
+.socials-srting-block__list .socials-srting-block__item:last-child {
   margin-right: 0;
 }
 
@@ -1135,10 +1132,31 @@ font-face {
   background-image: url(https://ostconf.com/i/blocks/social/telegram.svg);
 }
 
-.socials-head__link {
+.socials-srting-block__list
+.socials-srting-block__item
++ .social__item-text-block {
+  width: auto;
+  background-image: none;
+}
+
+.socials-srting-block__link {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.social__item-text-block {
+  height: auto;
+}
+
+.form-section .socials-srting-block__item {
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+}
+
+.form-section .social__item-text-block {
+  font-size: 21px;
 }
 
 .history {
@@ -1371,6 +1389,10 @@ font-face {
   margin-bottom: 16px;
 }
 
+.pk-section__title {
+  color: #ffffff;
+}
+
 .pc-section {
   padding-bottom: 0;
 }
@@ -1380,6 +1402,7 @@ font-face {
   flex-wrap: wrap;
   justify-content: start;
   padding: 0px 6%;
+  color: #ffffff;
 }
 
 .pk__item {
@@ -1407,11 +1430,9 @@ font-face {
 .pk__img {
   height: 170px;
   width: 170px;
-  border: 4px solid #ff0000;
-  border: 4px solid #FF0000;
+  border: 4px solid #f7e126;
   border-radius: 50%;
   margin-bottom: 7px;
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
 }
 
 .pk__avatar {
@@ -1816,11 +1837,21 @@ font-face {
   padding: 55px 0;
 }
 
+.subscribe-title {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+
+.subscribe-socials {
+  margin-right: 32px;
+  width: 100%;
+}
+
 .form {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  min-height: 163px;
   font-size: 24px;
 }
 
@@ -1844,10 +1875,11 @@ font-face {
 .subscribe-form-item--input-email {
   margin-right: 40px;
   display: flex;
+  flex-direction: column;
 }
 
 .subscribe-form-item__btn {
-  padding: 20px 70px;
+  padding: 20px 90px;
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -1958,7 +1990,7 @@ font-face {
   width: 362px;
   height: 250px;
   overflow: hidden;
-  border: 3px solid #fde300;
+  border: 3px solid #f7e126;
   margin-bottom: 6px;
 }
 
@@ -2122,7 +2154,7 @@ font-face {
 }
 
 .place {
-  background-color: #fde300;
+  background-color: #f7e126;
   color: #000000;
 }
 

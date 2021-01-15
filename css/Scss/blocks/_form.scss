@@ -3,12 +3,20 @@
   color: #ffffff;
   padding: 55px 0;
 }
+.subscribe-title {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
 
+.subscribe-socials {
+  margin-right: 32px;
+  width: 100%;
+}
 .form {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  min-height: 163px;
   font-size: 24px;
 }
 
@@ -31,10 +39,11 @@
 .subscribe-form-item--input-email {
   margin-right: 40px;
   display: flex;
+  flex-direction: column;
 }
 
 .subscribe-form-item__btn {
-  padding: 20px 70px;
+  padding: 20px 90px;
   font-size: 24px;
   text-transform: uppercase;
 }

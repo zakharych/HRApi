@@ -1,6 +1,6 @@
-// .pk-section__title {
-//     color: #ffffff;
-// }
+.pk-section__title {
+    color: #ffffff;
+}
 // .pc-section {   
 //     background: url(../img/bg_pattern_03.png) repeat; 
 //     background-color: $themecolor2;
@@ -13,7 +13,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    padding: 0px 6%;
+    padding: 0px 6%;    
+    color: #ffffff;
 }
 
 .pk__item {
@@ -40,15 +41,11 @@
 }
 
 .pk__img {
-    // height: 260px;
-    // width: 260px;
     height: 170px;
     width: 170px;
-    border: 4px solid #ff0000;
-    border: 4px solid $pkAcentBorder;
+    border: 4px solid $yellow;
     border-radius: 50%;
     margin-bottom: 7px;
-    box-shadow: 0 0 2px 1px rgba(0,0,0,0.4);
 }
 
 .pk__avatar {

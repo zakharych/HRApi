@@ -1,4 +1,4 @@
-$contanerWidth: 1340px;
+$contanerWidth: 1160px;
 
 
 //brekpoints
@@ -20,6 +20,7 @@ $tablets: 768px;
 @import "./blocks/theme";
 @import "./blocks/button";
 @import "./blocks/header";
+@import "./blocks/social";
 @import "./blocks/history";
 @import "./blocks/hero";
 @import "./blocks/about";
