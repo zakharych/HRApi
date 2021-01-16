@@ -9,7 +9,7 @@ copyData.innerText = curentYear;
 const tableString = document.querySelectorAll(".price__table-row");
 
 for (let i = 0; i < dateElem.length; i++) {
-  const metaData = dateElem[i].getAttribute("date");
+  const metaData = dateElem[i].getAttribute("meta-date");
   const metaDataString = Date.parse(`${metaData}`);
   const metaMounth = new Date(metaDataString).getMonth();
 

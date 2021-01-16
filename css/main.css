@@ -1169,19 +1169,20 @@ font-face {
 
 .history__list {
   display: flex;
+  align-items: center;
   color: #ffffff60;
 }
 
-.history__list .slick-list {
-  width: 90%;
-  margin: 0 auto;
+.history__list--width .slick-list {
+  padding-right: 45px;
 }
 
 .history__list .slick-prev,
 .history__list .slick-next {
-  height: 20px;
-  width: 20px;
-  transform: translateY(-8px);
+  position: relative;
+  height: 50px;
+  width: 33px;
+  transform: translateY(0);
 }
 
 .history__list > .slick-prev::before,
@@ -1197,7 +1198,7 @@ font-face {
 }
 
 .history__list > .slick-disabled {
-  opacity: 0;
+  opacity: 0.5;
   cursor: unset;
 }
 
@@ -1208,17 +1209,17 @@ font-face {
 }
 
 .history__list .slick-prev {
-  left: 10px;
+  left: 0;
 }
 
 .history__list .slick-next {
-  right: 10px;
+  right: 0;
 }
 
 .history__item {
   white-space: nowrap;
   width: 100%;
-  margin: 14px 10px;
+  margin: 14px 20px 14px 0;
 }
 
 .history__item :hover {
