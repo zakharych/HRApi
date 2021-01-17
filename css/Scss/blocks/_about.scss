@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-right: -39px;
+    // margin-right: -39px;
     // @include tablets {
     //   justify-content: center;
     // }
@@ -25,11 +25,20 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 40px;
-    margin-right: 29px;
+    // margin-right: 29px;
     flex: 0;
+    &:nth-child(10) {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
 
     &:last-child {
-      flex: 1;
+      // flex: 1;
+      width: 33%;
+      flex: auto;
     }
 
     // @include tablets {

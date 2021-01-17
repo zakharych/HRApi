@@ -643,11 +643,11 @@ body {
 .container {
   margin: 0 auto;
   width: 1160px;
-  padding: 0 5px;
+  padding: 0 15px;
 }
 
 .section {
-  padding: 55px 10px;
+  padding: 55px 0;
   min-width: 1160px;
 }
 
@@ -1078,11 +1078,6 @@ font-face {
 
 .header-col {
   display: flex;
-  margin-right: 5px;
-}
-
-.header-col:first-child {
-  margin-right: 0px;
 }
 
 .lang__button {
@@ -1305,7 +1300,6 @@ font-face {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-right: -39px;
 }
 
 .about__items {
@@ -1320,12 +1314,21 @@ font-face {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 40px;
-  margin-right: 29px;
   flex: 0;
 }
 
+.about__items:nth-child(10) {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 .about__items:last-child {
-  flex: 1;
+  margin-right: 0;
+}
+
+.about__items:last-child {
+  width: 33%;
+  flex: auto;
 }
 
 .about__text {
@@ -2018,8 +2021,7 @@ font-face {
 .contacts-section {
   background-color: #070b11;
   color: #ffffff;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 
 .contacts-section__title {
